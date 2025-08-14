@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="64" fill="#000000"/>
+  
+  <!-- Batman symbol -->
+  <path d="M64 20 
+           C54 20 44 25 38 35
+           C32 45 30 55 35 65
+           L40 70
+           C45 75 50 77 55 77
+           L60 77
+           C62 77 64 75 64 73
+           C64 75 66 77 68 77
+           L73 77
+           C78 77 83 75 88 70
+           L93 65
+           C98 55 96 45 90 35
+           C84 25 74 20 64 20 Z
+           
+           M45 45
+           C40 50 40 60 45 65
+           C50 70 55 70 60 65
+           L64 60
+           L68 65
+           C73 70 78 70 83 65
+           C88 60 88 50 83 45
+           C78 40 70 42 64 48
+           C58 42 50 40 45 45 Z" 
+        fill="#4B0082" 
+        stroke="#B8860B" 
+        stroke-width="1"/>
+  
+  <!-- Accent highlights -->
+  <circle cx="52" cy="52" r="3" fill="#FFD700"/>
+  <circle cx="76" cy="52" r="3" fill="#FFD700"/>
+  
+  <!-- Batman eyes -->
+  <ellipse cx="52" cy="52" rx="6" ry="8" fill="#000000"/>
+  <ellipse cx="76" cy="52" rx="6" ry="8" fill="#000000"/>
+  <ellipse cx="52" cy="50" rx="2" ry="3" fill="#DC143C"/>
+  <ellipse cx="76" cy="50" rx="2" ry="3" fill="#DC143C"/>
+  
+  <!-- Code brackets representing coding -->
+  <text x="20" y="105" font-family="monospace" font-size="14" fill="#B8860B" font-weight="bold">&lt;/&gt;</text>
+  <text x="94" y="105" font-family="monospace" font-size="14" fill="#B8860B" font-weight="bold">&lt;/&gt;</text>
+</svg>

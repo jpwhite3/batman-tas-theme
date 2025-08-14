@@ -1,0 +1,48 @@
+{
+  "name": "darkman-theme",
+  "displayName": "Darkman Theme",
+  "description": "A professional material design dark theme with color blind friendly colors and unified panel appearance",
+  "version": "1.0.0",
+  "publisher": "darkman",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "dark",
+    "material design",
+    "color blind friendly",
+    "accessible",
+    "professional",
+    "theme"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Darkman Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/darkman-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "vsce package --no-git-tag-version",
+    "prerelease": "npm run build",
+    "publish": "vsce publish --no-git-tag-version",
+    "validate": "node -e \"JSON.parse(require('fs').readFileSync('themes/darkman-color-theme.json', 'utf8'))\""
+  },
+  "devDependencies": {
+    "vsce": "^2.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darkman/batman-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/darkman/batman-theme/issues"
+  },
+  "homepage": "https://github.com/darkman/batman-theme#readme",
+  "license": "MIT"
+}

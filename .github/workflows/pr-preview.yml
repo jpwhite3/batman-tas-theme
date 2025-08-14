@@ -1,0 +1,100 @@
+name: 🔍 PR Preview Build
+
+on:
+  pull_request:
+    branches: [ main ]
+    types: [opened, synchronize, reopened]
+
+jobs:
+  preview-build:
+    name: 🎨 Generate PR Preview
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: ⚡ Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: 📦 Install VSCE
+      run: npm install -g vsce
+      
+    - name: 🎯 Get PR info
+      id: pr_info
+      run: |
+        echo "pr_number=${{ github.event.number }}" >> $GITHUB_OUTPUT
+        echo "pr_sha=${GITHUB_SHA::8}" >> $GITHUB_OUTPUT
+        
+    - name: 🏗️ Build preview extension
+      run: |
+        # Create preview version with PR info
+        PREVIEW_VERSION="$(node -p "require('./package.json').version")-pr${{ steps.pr_info.outputs.pr_number }}-${{ steps.pr_info.outputs.pr_sha }}"
+        echo "Building preview version: $PREVIEW_VERSION"
+        
+        # Temporarily update package.json for preview build
+        node -e "
+          const pkg = require('./package.json');
+          pkg.version = '$PREVIEW_VERSION';
+          pkg.displayName = '🦇 Darkman Theme (PR Preview)';
+          pkg.description = pkg.description + ' - PR #${{ steps.pr_info.outputs.pr_number }} Preview Build';
+          require('fs').writeFileSync('package.json', JSON.stringify(pkg, null, 2));
+        "
+        
+        vsce package --no-git-tag-version
+        
+    - name: 📊 Generate theme statistics
+      run: |
+        echo "## 🦇 Darkman Theme Preview Build" > preview-info.md
+        echo "" >> preview-info.md
+        echo "**PR #${{ steps.pr_info.outputs.pr_number }}** - Preview build for commit ${{ steps.pr_info.outputs.pr_sha }}" >> preview-info.md
+        echo "" >> preview-info.md
+        echo "### 📊 Theme Statistics" >> preview-info.md
+        echo "" >> preview-info.md
+        
+        # Count colors in theme
+        TOTAL_COLORS=$(grep -o '"#[0-9A-Fa-f]\{6\}[0-9A-Fa-f]*"' themes/darkman-color-theme.json | wc -l)
+        BATMAN_NAVY=$(grep -o '#1E3A8A' themes/darkman-color-theme.json | wc -l)
+        BATMAN_INDIGO=$(grep -o '#6366F1' themes/darkman-color-theme.json | wc -l)
+        DARK_RED=$(grep -o '#8B2635' themes/darkman-color-theme.json | wc -l)
+        JOKER_GREEN=$(grep -o -E '#7A8650|#9FB36B' themes/darkman-color-theme.json | wc -l)
+        VILLAIN_PURPLE=$(grep -o '#4A3666' themes/darkman-color-theme.json | wc -l)
+        
+        echo "- 🎨 **Total Colors**: $TOTAL_COLORS" >> preview-info.md
+        echo "- 🦇 **Batman Navy**: $BATMAN_NAVY occurrences" >> preview-info.md
+        echo "- 💙 **Batman Indigo**: $BATMAN_INDIGO occurrences" >> preview-info.md
+        echo "- 🔴 **Dark Red Accents**: $DARK_RED occurrences" >> preview-info.md
+        echo "- 🃏 **Joker Green**: $JOKER_GREEN occurrences" >> preview-info.md
+        echo "- 🟣 **Villain Purple**: $VILLAIN_PURPLE occurrences" >> preview-info.md
+        echo "" >> preview-info.md
+        echo "### 📦 Installation" >> preview-info.md
+        echo "" >> preview-info.md
+        echo "Download the preview `.vsix` file from the artifacts and install it in VS Code:" >> preview-info.md
+        echo '```bash' >> preview-info.md
+        echo 'code --install-extension darkman-theme-*-pr${{ steps.pr_info.outputs.pr_number }}-*.vsix' >> preview-info.md
+        echo '```' >> preview-info.md
+        
+    - name: 💾 Upload preview artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: darkman-theme-preview-pr${{ steps.pr_info.outputs.pr_number }}
+        path: |
+          *.vsix
+          preview-info.md
+        retention-days: 7
+        
+    - name: 📝 Comment on PR
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          const previewInfo = fs.readFileSync('preview-info.md', 'utf8');
+          
+          await github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: previewInfo + '\n\n🔗 Download preview from [Actions artifacts](https://github.com/' + context.repo.owner + '/' + context.repo.repo + '/actions/runs/' + context.runId + ')'
+          });

@@ -1,0 +1,17 @@
+.vscode/**
+.vscode-test/**
+.gitignore
+.yarnrc
+vsc-extension-quickstart.md
+**/tsconfig.json
+**/node_modules/**
+**/*.map
+src/**
+**/.nyc_output
+**/coverage/**
+**/.vscode-test/**
+**/.vscode/**
+.claude/**
+color-pallete.jpg
+vscode_settings.json
+CLAUDE.md
