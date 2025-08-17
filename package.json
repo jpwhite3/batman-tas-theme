@@ -1,9 +1,9 @@
 {
-  "name": "darkman-theme",
-  "displayName": "Darkman Theme",
-  "description": "A Batman-inspired VS Code theme with villain and Bat-family language-specific color schemes. Features Penguin (Python), Two-Face (Java), Riddler (Kotlin), Bane (Go), Scarecrow (JavaScript), Mr. Freeze (C#), Robin (JSON), Nightwing (YAML), and Catwoman (Markdown) color palettes.",
+  "name": "batman-tas-theme",
+  "displayName": "Batman TAS Theme",
+  "description": "A professional VS Code color theme inspired by Batman: The Animated Series (1990s). Features authentic Dark Deco color palette extracted from the legendary animated series, with Gotham midnight backgrounds, classic animation contrast, and Batman TAS-inspired navy blues, purples, and villain accents.",
   "version": "2.0.0",
-  "publisher": "darkman",
+  "publisher": "batman-tas",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -13,18 +13,17 @@
   "keywords": [
     "dark",
     "batman",
-    "villains",
-    "bat-family",
-    "language-specific",
-    "penguin",
-    "two-face",
-    "riddler",
-    "bane",
-    "scarecrow",
-    "mr-freeze",
-    "robin",
-    "nightwing",
-    "catwoman",
+    "animated series",
+    "tas",
+    "1990s",
+    "dark deco",
+    "gotham",
+    "bruce timm",
+    "art deco",
+    "classic animation",
+    "noir",
+    "batman tas",
+    "timeless",
     "material design",
     "color blind friendly",
     "accessible",
@@ -34,9 +33,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Darkman Theme",
+        "label": "Batman TAS Theme",
         "uiTheme": "vs-dark",
-        "path": "./themes/darkman-color-theme.json"
+        "path": "./themes/batman-tas-color-theme.json"
       }
     ]
   },
@@ -44,18 +43,18 @@
     "build": "vsce package --no-git-tag-version",
     "prerelease": "npm run build",
     "publish": "vsce publish --no-git-tag-version",
-    "validate": "node -e \"JSON.parse(require('fs').readFileSync('themes/darkman-color-theme.json', 'utf8'))\""
+    "validate": "node -e \"JSON.parse(require('fs').readFileSync('themes/batman-tas-color-theme.json', 'utf8'))\""
   },
   "devDependencies": {
     "vsce": "^2.15.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/darkman/batman-theme"
+    "url": "https://github.com/batman-tas/batman-tas-theme"
   },
   "bugs": {
-    "url": "https://github.com/darkman/batman-theme/issues"
+    "url": "https://github.com/batman-tas/batman-tas-theme/issues"
   },
-  "homepage": "https://github.com/darkman/batman-theme#readme",
+  "homepage": "https://github.com/batman-tas/batman-tas-theme#readme",
   "license": "MIT"
 }

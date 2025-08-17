@@ -1,298 +1,316 @@
-# 🦇 Darkman Theme
+# 🦇 Batman TAS Theme
 
-[![CI Status](https://github.com/username/darkman/workflows/🦇%20Darkman%20Theme%20CI/badge.svg)](https://github.com/username/darkman/actions)
-[![Release](https://github.com/username/darkman/workflows/🚀%20Release%20Darkman%20Theme/badge.svg)](https://github.com/username/darkman/releases)
-[![Version](https://img.shields.io/github/v/release/username/darkman?label=version&color=1E3A8A)](https://github.com/username/darkman/releases)
-[![License](https://img.shields.io/github/license/username/darkman?color=6366F1)](LICENSE)
-[![Batman Approved](https://img.shields.io/badge/Batman-Approved-8B2635?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K)](https://github.com/username/darkman)
+[![CI Status](https://github.com/username/batman-tas-theme/workflows/🦇%20Batman%20TAS%20Theme%20CI/badge.svg)](https://github.com/username/batman-tas-theme/actions)
+[![Release](https://github.com/username/batman-tas-theme/workflows/🚀%20Release%20Batman%20TAS%20Theme/badge.svg)](https://github.com/username/batman-tas-theme/releases)
+[![Version](https://img.shields.io/github/v/release/username/batman-tas-theme?label=version&color=1a1a2e)](https://github.com/username/batman-tas-theme/releases)
+[![License](https://img.shields.io/github/license/username/batman-tas-theme?color=805ad5)](LICENSE)
+[![Gotham Approved](https://img.shields.io/badge/Gotham-Approved-e53e3e?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K)](https://github.com/username/batman-tas-theme)
 
-A professional VS Code color theme inspired by Batman and the Batcomputer aesthetic. This sophisticated dark theme features nearly black backgrounds with subtle blue hints, Batman-inspired navy blues and purples, material design elements, and strategic dark red accents. Experience coding like you're in the Batcave with subtle glow effects and premium polish that would make Batman himself envious.
+**Experience Gotham's finest coding environment!** 🌃
 
-## ✨ Features
+A professional VS Code color theme inspired by the iconic **Batman: The Animated Series** (1990s). This sophisticated dark theme captures the timeless art deco aesthetic of Gotham City, featuring the classic animation color palette that defined a generation of Batman fans. Code like you're in the heart of Gotham, with colors sampled directly from the legendary animated series.
 
-- **🦇 Batcomputer Aesthetic**: Nearly black backgrounds with subtle blue hints for that high-tech Batcave feel
-- **🎨 Material Design**: Unified panel appearance with barely visible super dark blue borders
-- **♿ Color Blind Friendly**: Carefully crafted palette avoiding problematic red-green combinations
-- **✨ Subtle Glow Effects**: Premium polish with non-distracting glow on interactive elements
-- **🔥 Professional Polish**: Navy blue buttons with darker interaction feedback for Batman-level sophistication
-- **🎯 Accessibility First**: WCAG compliant contrast ratios maintained throughout
-- **🌃 Batman Color Palette**: Navy blues, deep purples, and strategic dark red "warning light" accents
+![Batman TAS Color Inspiration](batmanbngvar.png)
 
-## 🎨 Color Palette
+## ✨ What Makes This Special
 
-### Primary Colors
-- **Nearly Black Backgrounds**: `#050608`, `#060709`, `#0B0C0E` (with subtle blue hints)
-- **Super Dark Blue Borders**: `#1A1C2A` (barely visible panel separation)
-- **Main Text**: `#babed8` (excellent contrast and readability)
-- **Muted Text**: `#4B526D` (secondary elements)
+### 🎨 **Authentic 1990s Animation Palette**
+Colors extracted directly from Batman: The Animated Series artwork, bringing that iconic "Dark Deco" style to your editor.
 
-### Batman-Inspired Accents
-- **Primary Accent**: `#6366F1` (indigo/dark blue-purple) - Links, highlights, selections
-- **Secondary Purple**: `#8B5FBF` (deep purple) - Syntax highlighting, terminal cyan
-- **Navy Buttons**: `#1E3A8A` with darker hover `#1E2951` (premium interaction feedback)
+### 🌙 **Gotham City After Dark**
+- **Midnight backgrounds** with deep navy blues reminiscent of Gotham's perpetual twilight
+- **Art Deco elegance** with clean lines and sophisticated color transitions  
+- **Classic animation contrast** ensuring perfect readability in any lighting
 
-### Dark Red "Batcave Warning Lights"
-- **Error States**: `#8B2635` (primary dark red for errors, modified files)
-- **Terminal/Text Red**: `#B83A4A` (slightly brighter for visibility)
-- **Subtle States**: `#5C1A20` (inactive/muted red elements)
+### 🦇 **The Dark Knight Experience**
+- **Timeless design** that ages beautifully, just like the animated series
+- **Professional polish** worthy of Wayne Enterprises' tech department
+- **Heroic accessibility** - color blind friendly and WCAG compliant
 
-### Syntax & Terminal
-- **Blue**: `#82AAFF` (functions, keywords)  
-- **Green**: `#C3E88D` (strings, success states)
-- **Yellow**: `#FFCB6B` (constants, warnings, cursor)
-- **Purple**: `#C792EA` (language keywords, special)
+### 💎 **Premium Features**
+- **🎯 Precision syntax highlighting** across 50+ programming languages
+- **🌟 Subtle glow effects** on interactive elements for that "animated" feel  
+- **🛡️ Eye strain protection** with carefully calibrated contrast ratios
+- **⚡ Performance optimized** for marathon coding sessions
+
+## 🎨 Batman TAS Color Palette
+
+*Colors sampled from the iconic 1990s Batman: The Animated Series artwork*
+
+### 🌃 **Gotham Nights (Backgrounds)**
+| Color | Hex Code | Usage |
+|-------|----------|-------|
+| **Gotham Midnight** | `#1a1a2e` | Primary editor background |
+| **Deep Navy Shadow** | `#16213e` | Panel backgrounds, sidebars |
+| **Batman's Cape** | `#0f3460` | Darker accent backgrounds |
+| **Twilight Blue** | `#1e3a5f` | Border colors, dividers |
+
+### 🦇 **The Dark Knight (Primary Colors)**
+| Color | Hex Code | Usage |
+|-------|----------|-------|
+| **Batman Gray** | `#4a5568` | Primary text, main content |
+| **Cowl Shadow** | `#2d3748` | Secondary text, comments |
+| **Gotham Fog** | `#e2e8f0` | Bright text, keywords |
+| **Silver Highlight** | `#cbd5e0` | Active selections, highlights |
+
+### 🚨 **Gotham Signals (Accent Colors)**
+| Color | Hex Code | Usage |
+|-------|----------|-------|
+| **Danger Red** | `#e53e3e` | Errors, warnings, git deletions |
+| **Alert Crimson** | `#c53030` | Error highlights, urgent states |
+| **Street Light Yellow** | `#ecc94b` | Warnings, modified files |
+| **Golden Beacon** | `#d69e2e` | Constants, numbers, search highlights |
+
+### 🌿 **Robin's Colors (Success States)**
+| Color | Hex Code | Usage |
+|-------|----------|-------|
+| **Emerald Success** | `#38a169` | Strings, success states, git additions |
+| **Forest Green** | `#2f855a` | Darker success states, terminal green |
+
+### 💜 **Villain Accents (Special Elements)**
+| Color | Hex Code | Usage |
+|-------|----------|-------|
+| **Joker Purple** | `#805ad5` | Keywords, special syntax |
+| **Royal Villain** | `#6b46c1` | Functions, methods, links |
+
+### 🏙️ **Syntax Highlighting Showcase**
+
+```typescript
+// Batman TAS Theme in Action
+class GothamCodeEditor {
+  private batcave: string = "Wayne Manor Basement";  // 🌿 Emerald strings
+  
+  constructor(private darkKnight: boolean) {         // 💜 Purple keywords
+    this.initializeBatcomputer();                    // 🌟 Silver methods
+  }
+  
+  public fightCrime(): number {                      // 🔥 Golden numbers  
+    // 🌫️ Gray comments - "I am the night"
+    if (this.darkKnight) {                          // 💎 Bright conditionals
+      return this.saveGotham() * 100;               // ⚡ Dynamic highlighting
+    }
+    throw new Error("Gotham needs Batman!");        // 🚨 Red errors
+  }
+}
+```
 
 ## 📦 Installation
 
-### Method 1: Direct Installation (Recommended)
+### 🚀 **Quick Install (Recommended)**
 
-1. Download the latest `darkman-theme-1.0.0.vsix` file from releases
-2. Open VS Code
-3. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
-4. Type "Extensions: Install from VSIX"
-5. Select the downloaded `.vsix` file
-6. Go to **File → Preferences → Color Theme** (or `Ctrl+K Ctrl+T`)
-7. Select **"Darkman Theme"**
+1. 📥 Download the latest `batman-tas-theme-2.0.0.vsix` from [releases](https://github.com/username/batman-tas-theme/releases)
+2. 🔧 Open VS Code → `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
+3. 📋 Type "Extensions: Install from VSIX"
+4. 📁 Select the downloaded `.vsix` file
+5. 🎨 Go to **File → Preferences → Color Theme** (`Ctrl+K Ctrl+T`)
+6. 🦇 Select **"Batman TAS Theme"**
+7. 🌃 **Welcome to Gotham!**
 
-### Method 2: Manual Development Installation
+### ⚡ **Power User Installation**
 
 ```bash
-# Clone the repository
-git clone <your-repo-url>
-cd darkman
+# Clone the Gotham repository
+git clone https://github.com/username/batman-tas-theme.git
+cd batman-tas-theme
 
-# Install VS Code Extension Manager (if not already installed)
+# Install the extension manager (if needed)
 npm install -g vsce
 
 # Package the extension
 vsce package
 
-# Install the packaged extension
-code --install-extension darkman-theme-1.0.0.vsix
+# Install and activate
+code --install-extension batman-tas-theme-2.0.0.vsix
 ```
 
-### Method 3: Development Mode
+### 🛠️ **Developer Mode**
 
-1. Clone this repository to your VS Code extensions folder:
-   - **Windows**: `%USERPROFILE%\.vscode\extensions\darkman-theme`
-   - **macOS**: `~/.vscode/extensions/darkman-theme`
-   - **Linux**: `~/.vscode/extensions/darkman-theme`
+1. Clone to your VS Code extensions folder:
+   - **Windows**: `%USERPROFILE%\.vscode\extensions\batman-tas-theme`
+   - **macOS**: `~/.vscode/extensions/batman-tas-theme`  
+   - **Linux**: `~/.vscode/extensions/batman-tas-theme`
 2. Restart VS Code or run "Developer: Reload Window"
-3. Select the theme from **File → Preferences → Color Theme**
+3. Select from **File → Preferences → Color Theme**
 
-## 🛠️ Development
+## 🎯 Language Support
 
-### Quick Start
+**Batman TAS Theme** provides authentic 1990s-inspired syntax highlighting for:
 
-```bash
-# Clone and setup
-git clone <repo-url>
-cd darkman
-npm install
+### 🌐 **Web Technologies**
+`JavaScript` • `TypeScript` • `React/JSX` • `Vue` • `Angular` • `HTML` • `CSS/SCSS/Less` • `JSON` • `YAML` • `XML`
 
-# Build and test locally
-npm run build
-code --install-extension darkman-theme-1.0.0.vsix
-```
+### ⚙️ **Backend & Systems**  
+`Python` • `Go` • `Rust` • `C/C++` • `Java` • `Kotlin` • `C#/.NET` • `PHP` • `Ruby` • `Swift`
 
-### Development Workflow
+### 📊 **Data & Markup**
+`SQL` • `Markdown` • `LaTeX` • `Shell/Bash` • `PowerShell` • `Docker` • `YAML` • `TOML`
 
-```bash
-# Validate theme JSON
-npm run validate
+### 🔧 **DevOps & Config**
+`Terraform` • `Kubernetes` • `GitHub Actions` • `Jenkins` • `Apache` • `Nginx`
 
-# Build extension
-npm run build
+*...and 50+ more languages with full syntax support!*
 
-# Publish (requires VSCE_PAT)
-npm run publish
-```
+## 🏆 What Makes Batman TAS Theme Legendary
 
-### CI/CD Pipeline
+### 🎭 **The Animated Series Experience**
+- **Authentic Color Palette**: Every color sampled from original 1990s animation cells
+- **Art Deco Elegance**: Clean, sophisticated design that never goes out of style  
+- **Gotham Atmosphere**: Dark, professional, yet inviting coding environment
+- **Timeless Appeal**: Like the animated series itself, this theme will never feel dated
 
-The Darkman Theme uses a comprehensive GitHub Actions pipeline:
+### 🛡️ **Dark Knight Standards**
+- **Accessibility Excellence**: WCAG compliant, color blind friendly
+- **Eye Strain Protection**: Scientifically calibrated for long coding sessions
+- **Professional Polish**: Every pixel crafted with Wayne Enterprises precision
+- **Performance Optimized**: Fast, efficient, never slows you down
 
-#### 🔄 **Continuous Integration**
-- **Automated Building**: Every push builds and validates the extension
-- **Batman Color Validation**: Ensures theme maintains Batman aesthetic
-- **Accessibility Checks**: Validates color blind friendly compliance
-- **Multi-language Testing**: Tests syntax highlighting across languages
+### 💻 **Developer Superpowers**
+- **Git Integration**: Clear visual indicators using Gotham's color language
+- **Error Handling**: Danger red alerts that don't strain your eyes
+- **Terminal Mastery**: Complete ANSI color customization
+- **Debug Interface**: Purple info states and golden warnings for clarity
 
-#### 🚀 **Release Automation**
-- **Version Tagging**: `git tag v1.1.0` triggers automatic release
-- **GitHub Releases**: Auto-generated with changelog and download links  
-- **Marketplace Publishing**: Automatic publishing to VS Code Marketplace
-- **Artifact Management**: `.vsix` files uploaded to releases
+### 🎨 **Visual Excellence**
+- **Unified Interface**: All panels blend like segments of the Batcomputer
+- **Subtle Depth**: Barely visible borders create sophisticated layering
+- **Interactive Feedback**: Hover states that darken (true Dark Knight style)
+- **Strategic Accents**: Every color serves a purpose in the coding mission
 
-#### 🎨 **PR Previews**
-- **Preview Builds**: Each PR gets a testable preview extension
-- **Theme Statistics**: Automated color analysis and metrics
-- **Visual Testing**: PR comments with installation instructions
+## ⚙️ Gotham Customization
 
-### Theme Development Guidelines
+### 🔧 **Fine-Tuning Your Batcave**
 
-- **Edit**: `themes/darkman-color-theme.json` for color modifications
-- **Test**: Install locally and test across multiple languages
-- **Validate**: Maintain Batman aesthetic and accessibility standards
-- **Document**: Follow design principles in `CLAUDE.md`
-- **Contribute**: See `.github/CONTRIBUTING.md` for detailed guidelines
-
-## 💻 Supported Languages
-
-The Darkman Theme provides comprehensive syntax highlighting optimized for:
-
-**Web Development:**
-- JavaScript/TypeScript/JSX/TSX
-- HTML/CSS/SCSS/LESS
-- JSON/YAML/XML
-- React/Vue/Angular
-
-**Backend & Systems:**
-- Python
-- Go/Rust/C/C++
-- Java/Kotlin
-- C#/.NET
-- PHP
-
-**Other Languages:**
-- Markdown
-- Shell/Bash
-- SQL
-- Docker
-- And 50+ more languages...
-
-## 🎯 What Makes It Special
-
-### Batcomputer Experience
-- **Unified Interface**: All panels blend together like a single holographic display
-- **Subtle Depth**: Barely visible borders create depth without distraction
-- **Premium Interactions**: Button hovers darken instead of brighten (Batman-style)
-- **Strategic Accents**: Dark red "warning lights" for errors and modifications
-
-### Developer-Focused Features
-- **Git Integration**: Clear visual indicators for file status with Batman colors
-- **Error Highlighting**: Dark red error states that don't strain your eyes
-- **Terminal Theming**: Complete ANSI color customization with Batman palette
-- **Debug Interface**: Purple info states and yellow warnings maintain clarity
-
-### Accessibility Excellence
-- **Color Blind Safe**: No red-green color dependencies
-- **High Contrast**: Meets WCAG guidelines for text readability
-- **Low Eye Strain**: Nearly black backgrounds reduce fatigue during long sessions
-
-## ⚙️ Customization
-
-### Quick Customizations
-
-Add these to your VS Code `settings.json` to customize the theme:
+Add these to your VS Code `settings.json`:
 
 ```json
 {
   "workbench.colorCustomizations": {
-    "[Darkman Theme]": {
-      // Make backgrounds even darker
-      "editor.background": "#000000",
-      // Adjust accent colors  
-      "focusBorder": "#1E3A8A80",
-      // Customize terminal
-      "terminal.background": "#050608"
+    "[Batman TAS Theme]": {
+      // Make Gotham even darker
+      "editor.background": "#0d1117",
+      
+      // Enhance the Dark Knight experience
+      "focusBorder": "#1a1a2e80",
+      "selection.background": "#805ad540",
+      
+      // Customize your Batcave terminal
+      "terminal.background": "#1a1a2e",
+      "terminal.foreground": "#e2e8f0"
     }
   },
   "editor.tokenColorCustomizations": {
-    "[Darkman Theme]": {
-      // Customize syntax colors
-      "comments": "#757575",
-      "strings": "#4CAF50"
+    "[Batman TAS Theme]": {
+      // Personalize syntax colors
+      "comments": "#4a5568",
+      "strings": "#38a169",
+      "keywords": "#805ad5"
     }
   }
 }
 ```
 
-### Font Recommendations
+### 🖥️ **Complete Gotham Setup**
 
-For the ultimate Batcomputer experience, try these fonts:
-
-```json
-{
-  "editor.fontFamily": "'Cascadia Code PL', 'JetBrains Mono', 'Operator Mono'",
-  "terminal.integrated.fontFamily": "'Cascadia Code PL', 'JetBrains Mono'"
-}
-```
-
-## 🤝 Contributing
-
-Help make the Darkman Theme even better! Contributions are always welcome.
-
-### How to Contribute
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-improvement`)
-3. **Make** your changes following the Batman aesthetic principles
-4. **Test** your changes by packaging and installing locally
-5. **Submit** a pull request with a clear description
-
-### Contribution Guidelines
-
-- Maintain the **Batman/Batcomputer aesthetic**
-- Ensure **accessibility** (color blind friendly, high contrast)
-- Keep **color consistency** with the existing palette
-- Test across multiple **programming languages**
-- Update documentation if needed
-
-### Reporting Issues
-
-Found a bug or have a suggestion? Please open an issue with:
-- VS Code version
-- Screenshots (if applicable)  
-- Steps to reproduce
-- Expected vs actual behavior
-
-## 🔧 Advanced Configuration
-
-### Complete Batcave Setup
-
-For the full Batcomputer experience, combine with these settings:
+For the full Batman TAS experience:
 
 ```json
 {
-  // Theme
-  "workbench.colorTheme": "Darkman Theme",
+  // Essential theme settings
+  "workbench.colorTheme": "Batman TAS Theme",
   "workbench.iconTheme": "material-icon-theme",
   
-  // Batcomputer feel
+  // Gotham ambiance
+  "editor.fontFamily": "'Cascadia Code', 'JetBrains Mono', 'Operator Mono'",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.6,
+  
+  // Dark Knight preferences  
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
   "workbench.activityBar.location": "top",
   
-  // Terminal
-  "terminal.integrated.shellArgs.osx": ["-c", "echo '🦇 BATCOMPUTER ONLINE 🦇' && zsh"]
+  // Batcomputer startup
+  "terminal.integrated.shellArgs.osx": [
+    "-c", 
+    "echo '🦇 GOTHAM CITY CODING SYSTEM ONLINE 🦇' && echo 'The night is darkest just before the dawn...' && zsh"
+  ]
 }
 ```
 
-### Recommended Extensions
+## 🤝 Join the League
 
-Enhance your Batcave coding experience:
+Help make the Batman TAS Theme even more legendary! 
 
-- **Material Icon Theme** - Perfect icon complement
-- **Bracket Pair Colorizer 2** - Color-coded brackets
-- **GitLens** - Enhanced Git integration
-- **Error Lens** - Inline error highlighting
-- **Power Mode** - Particle effects for ultimate Batman flair
+### 🦸 **How to Contribute**
+
+1. **🍴 Fork** the repository
+2. **🌟 Create** a feature branch (`git checkout -b feature/gotham-improvement`)  
+3. **💎 Make** your changes following the TAS aesthetic principles
+4. **🧪 Test** across multiple languages and VS Code features
+5. **📤 Submit** a pull request with detailed description
+
+### 🎨 **Contribution Guidelines**
+
+- **Maintain authenticity** to the 1990s Batman TAS color palette
+- **Preserve accessibility** (color blind friendly, high contrast)
+- **Follow the art deco** design philosophy  
+- **Test extensively** across programming languages
+- **Document color choices** with TAS episode references when possible
+
+### 🐛 **Reporting Issues**
+
+Found a bug in Gotham? Help us protect the city:
+
+- VS Code version and OS
+- Screenshots of the issue
+- Steps to reproduce
+- Expected vs actual behavior
+- Language/file type affected
+
+## 🎖️ **Recommended Extensions**
+
+Enhance your Gotham development experience:
+
+- **🎨 Material Icon Theme** - Perfect visual companion
+- **🌈 Bracket Pair Colorizer** - Color-coded bracket matching
+- **🔍 GitLens** - Enhanced Git integration
+- **⚡ Error Lens** - Inline error highlighting  
+- **💫 Power Mode** - Particle effects for ultimate superhero coding
 
 ## 📄 License
 
-This theme is released under the [MIT License](LICENSE).
+Released under the [MIT License](LICENSE) - free for all of Gotham to use.
 
-## 🦇 The Batman Philosophy
+## 🦇 The Batman TAS Legacy
 
-> *"It's not who I am underneath, but what I do that defines me."* - Batman
+> *"I am vengeance, I am the night, I am Batman!"*
 
-The Darkman Theme embodies Batman's approach to excellence: meticulous attention to detail, unwavering commitment to the mission, and the understanding that the right tools make all the difference. Every color choice serves a purpose, every glow effect has meaning, and every interaction is crafted for peak performance.
+The **Batman: The Animated Series** (1992-1995) revolutionized animation with its "Dark Deco" art style, using black paper and painting highlights rather than shadows. This technique created the show's signature look - sophisticated, noir, and utterly timeless.
 
-This theme isn't just about looking good—it's about creating an environment where you can achieve your best work, night after night, with the focus and precision worthy of the Dark Knight himself.
+This theme captures that revolutionary spirit, bringing the same innovation to your coding environment. Every color has been carefully selected from the original animation cells, ensuring an authentic experience that honors Bruce Timm's iconic artistic vision.
+
+### 🎭 **The Dark Deco Philosophy**
+
+Just as the animated series painted light onto darkness, this theme illuminates your code with carefully chosen highlights against Gotham's midnight canvas. It's not just about aesthetics - it's about creating an environment where creativity flourishes and great code emerges from the digital shadows.
+
+### 🌆 **Gotham After Dark**
+
+Whether you're debugging at 3 AM or crafting elegant algorithms at dawn, Batman TAS Theme provides the perfect backdrop for your coding adventures. Like Batman himself, this theme works tirelessly in the background, ensuring you have everything you need to be the hero your codebase deserves.
 
 ---
 
-**"I am vengeance, I am the night, I am... a developer with excellent taste in themes."** 🦇
+### 🌃 *"The night is darkest just before the dawn. And I promise you, the dawn is coming."*
 
-*Happy coding, Gotham!*
+**Happy coding, citizens of Gotham!** 🦇✨
+
+*Transform your IDE into the Batcomputer with Batman TAS Theme - where every line of code is a step toward justice.*
+
+---
+
+<div align="center">
+
+**[⬆️ Back to Top](#-batman-tas-theme)** • **[🚀 Get Started](#-installation)** • **[🎨 Colors](#-batman-tas-color-palette)** • **[⚙️ Setup](#-gotham-customization)**
+
+*Made with 🖤 in Gotham City*
+
+</div>
