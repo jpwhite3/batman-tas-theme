@@ -110,7 +110,7 @@ npm install -g vsce
 vsce package
 
 # Install and activate
-code --install-extension batman-tas-theme-2.0.0.vsix
+code --install-extension batman-tas-theme-X.X.X.vsix
 ```
 
 ### 🛠️ **Developer Mode**
