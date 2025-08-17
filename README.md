@@ -1,7 +1,7 @@
 # 🦇 Batman TAS Theme
 
-[![CI Status](https://github.com/jpwhite3/batman-tas-theme/workflows/🦇%20Batman%20TAS%20Theme%20CI/badge.svg)](https://github.com/jpwhite3/batman-tas-theme/actions)
-[![Release](https://github.com/jpwhite3/batman-tas-theme/workflows/🚀%20Release%20Batman%20TAS%20Theme/badge.svg)](https://github.com/jpwhite3/batman-tas-theme/releases)
+[![CI Status](https://github.com/jpwhite3/batman-tas-theme/workflows/Batman%20TAS%20Theme%20CI/badge.svg)](https://github.com/jpwhite3/batman-tas-theme/actions)
+[![Release](https://github.com/jpwhite3/batman-tas-theme/workflows/Release%20Batman%20TAS%20Theme/badge.svg)](https://github.com/jpwhite3/batman-tas-theme/releases)
 [![Version](https://img.shields.io/github/v/release/username/batman-tas-theme?label=version&color=1a1a2e)](https://github.com/jpwhite3/batman-tas-theme/releases)
 [![License](https://img.shields.io/github/license/username/batman-tas-theme?color=805ad5)](LICENSE)
 [![Gotham Approved](https://img.shields.io/badge/Gotham-Approved-e53e3e?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K)](https://github.com/jpwhite3/batman-tas-theme)
@@ -12,15 +12,15 @@
 
 A professional VS Code color theme inspired by the iconic **Batman: The Animated Series** (1990s). This sophisticated dark theme captures the timeless art deco aesthetic of Gotham City, featuring the classic animation color palette that defined a generation of Batman fans. Code like you're in the heart of Gotham, with colors sampled directly from the legendary animated series.
 
-![Batman TAS Color Inspiration](batmanbngvar.png)
+![Batman TAS Color Inspiration](images/example-theme.png)
 
-## ✨ What Makes This Special
+## What Makes This Special
 
-### 🎨 **Authentic 1990s Animation Palette**
+### **Authentic 1990s Animation Palette**
 
 Colors extracted directly from Batman: The Animated Series artwork, bringing that iconic "Dark Deco" style to your editor.
 
-### 🌙 **Gotham City After Dark**
+### **Gotham City After Dark**
 
 - **Midnight backgrounds** with deep navy blues reminiscent of Gotham's perpetual twilight
 - **Art Deco elegance** with clean lines and sophisticated color transitions
@@ -39,11 +39,11 @@ Colors extracted directly from Batman: The Animated Series artwork, bringing tha
 - **🛡️ Eye strain protection** with carefully calibrated contrast ratios
 - **⚡ Performance optimized** for marathon coding sessions
 
-## 🎨 Batman TAS Color Palette
+## Batman TAS Color Palette
 
 _Colors sampled from the iconic 1990s Batman: The Animated Series artwork_
 
-### 🌃 **Gotham Nights (Backgrounds)**
+### **Gotham Nights (Backgrounds)**
 
 | Color                | Hex Code  | Usage                       |
 | -------------------- | --------- | --------------------------- |
@@ -52,7 +52,7 @@ _Colors sampled from the iconic 1990s Batman: The Animated Series artwork_
 | **Batman's Cape**    | `#0f3460` | Darker accent backgrounds   |
 | **Twilight Blue**    | `#1e3a5f` | Border colors, dividers     |
 
-### 🦇 **The Dark Knight (Primary Colors)**
+### **The Dark Knight (Primary Colors)**
 
 | Color                | Hex Code  | Usage                         |
 | -------------------- | --------- | ----------------------------- |
@@ -61,7 +61,7 @@ _Colors sampled from the iconic 1990s Batman: The Animated Series artwork_
 | **Gotham Fog**       | `#e2e8f0` | Bright text, keywords         |
 | **Silver Highlight** | `#cbd5e0` | Active selections, highlights |
 
-### 🚨 **Gotham Signals (Accent Colors)**
+### **Gotham Signals (Accent Colors)**
 
 | Color                   | Hex Code  | Usage                                 |
 | ----------------------- | --------- | ------------------------------------- |
@@ -70,37 +70,33 @@ _Colors sampled from the iconic 1990s Batman: The Animated Series artwork_
 | **Street Light Yellow** | `#ecc94b` | Warnings, modified files              |
 | **Golden Beacon**       | `#d69e2e` | Constants, numbers, search highlights |
 
-### 🌿 **Robin's Colors (Success States)**
+### **Robin's Colors (Success States)**
 
 | Color               | Hex Code  | Usage                                  |
 | ------------------- | --------- | -------------------------------------- |
 | **Emerald Success** | `#38a169` | Strings, success states, git additions |
 | **Forest Green**    | `#2f855a` | Darker success states, terminal green  |
 
-### 💜 **Villain Accents (Special Elements)**
+### **Villain Accents (Special Elements)**
 
 | Color             | Hex Code  | Usage                     |
 | ----------------- | --------- | ------------------------- |
 | **Joker Purple**  | `#805ad5` | Keywords, special syntax  |
 | **Royal Villain** | `#6b46c1` | Functions, methods, links |
 
-### Syntax Highlighting Showcase
+## Installation
 
-![Syntax Highlighting Showcase](images/example-theme.png)
+### **Quick Install (Recommended)**
 
-## 📦 Installation
+1. Download the latest `batman-tas-theme-2.0.0.vsix` from [releases](https://github.com/jpwhite3/batman-tas-theme/releases)
+2. Open VS Code → `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
+3. Type "Extensions: Install from VSIX"
+4. Select the downloaded `.vsix` file
+5. Go to **File → Preferences → Color Theme** (`Ctrl+K Ctrl+T`)
+6. Select **"Batman TAS Theme"**
+7. **Welcome to Gotham!**
 
-### 🚀 **Quick Install (Recommended)**
-
-1. 📥 Download the latest `batman-tas-theme-2.0.0.vsix` from [releases](https://github.com/jpwhite3/batman-tas-theme/releases)
-2. 🔧 Open VS Code → `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
-3. 📋 Type "Extensions: Install from VSIX"
-4. 📁 Select the downloaded `.vsix` file
-5. 🎨 Go to **File → Preferences → Color Theme** (`Ctrl+K Ctrl+T`)
-6. 🦇 Select **"Batman TAS Theme"**
-7. 🌃 **Welcome to Gotham!**
-
-### ⚡ **Power User Installation**
+### **Power User Installation**
 
 ```bash
 # Clone the Gotham repository
@@ -126,7 +122,7 @@ code --install-extension batman-tas-theme-2.0.0.vsix
 2. Restart VS Code or run "Developer: Reload Window"
 3. Select from **File → Preferences → Color Theme**
 
-## 🎯 Language Support
+## Language Support
 
 **Batman TAS Theme** provides authentic 1990s-inspired syntax highlighting for:
 
@@ -148,39 +144,39 @@ code --install-extension batman-tas-theme-2.0.0.vsix
 
 _...and 50+ more languages with full syntax support!_
 
-## 🏆 What Makes Batman TAS Theme Legendary
+## What Makes Batman TAS Theme Legendary
 
-### 🎭 **The Animated Series Experience**
+### **The Animated Series Experience**
 
 - **Authentic Color Palette**: Every color sampled from original 1990s animation cells
 - **Art Deco Elegance**: Clean, sophisticated design that never goes out of style
 - **Gotham Atmosphere**: Dark, professional, yet inviting coding environment
 - **Timeless Appeal**: Like the animated series itself, this theme will never feel dated
 
-### 🛡️ **Dark Knight Standards**
+### **Dark Knight Standards**
 
 - **Accessibility Excellence**: WCAG compliant, color blind friendly
 - **Eye Strain Protection**: Scientifically calibrated for long coding sessions
 - **Professional Polish**: Every pixel crafted with Wayne Enterprises precision
 - **Performance Optimized**: Fast, efficient, never slows you down
 
-### 💻 **Developer Superpowers**
+### **Developer Superpowers**
 
 - **Git Integration**: Clear visual indicators using Gotham's color language
 - **Error Handling**: Danger red alerts that don't strain your eyes
 - **Terminal Mastery**: Complete ANSI color customization
 - **Debug Interface**: Purple info states and golden warnings for clarity
 
-### 🎨 **Visual Excellence**
+### **Visual Excellence**
 
 - **Unified Interface**: All panels blend like segments of the Batcomputer
 - **Subtle Depth**: Barely visible borders create sophisticated layering
 - **Interactive Feedback**: Hover states that darken (true Dark Knight style)
 - **Strategic Accents**: Every color serves a purpose in the coding mission
 
-## ⚙️ Gotham Customization
+## Gotham Customization
 
-### 🔧 **Fine-Tuning Your Batcave**
+### **Fine-Tuning Your Batcave**
 
 Add these to your VS Code `settings.json`:
 
@@ -211,7 +207,7 @@ Add these to your VS Code `settings.json`:
 }
 ```
 
-### 🖥️ **Complete Gotham Setup**
+### **Complete Gotham Setup**
 
 For the full Batman TAS experience:
 
@@ -239,11 +235,11 @@ For the full Batman TAS experience:
 }
 ```
 
-## 🤝 Join the League
+## Join the League
 
 Help make the Batman TAS Theme even more legendary!
 
-### 🦸 **How to Contribute**
+### **How to Contribute**
 
 1. **🍴 Fork** the repository
 2. **🌟 Create** a feature branch (`git checkout -b feature/gotham-improvement`)
@@ -251,7 +247,7 @@ Help make the Batman TAS Theme even more legendary!
 4. **🧪 Test** across multiple languages and VS Code features
 5. **📤 Submit** a pull request with detailed description
 
-### 🎨 **Contribution Guidelines**
+### **Contribution Guidelines**
 
 - **Maintain authenticity** to the 1990s Batman TAS color palette
 - **Preserve accessibility** (color blind friendly, high contrast)
@@ -259,7 +255,7 @@ Help make the Batman TAS Theme even more legendary!
 - **Test extensively** across programming languages
 - **Document color choices** with TAS episode references when possible
 
-### 🐛 **Reporting Issues**
+### **Reporting Issues**
 
 Found a bug in Gotham? Help us protect the city:
 
@@ -269,7 +265,7 @@ Found a bug in Gotham? Help us protect the city:
 - Expected vs actual behavior
 - Language/file type affected
 
-## 🎖️ **Recommended Extensions**
+## **Recommended Extensions**
 
 Enhance your Gotham development experience:
 
@@ -279,7 +275,7 @@ Enhance your Gotham development experience:
 - **⚡ Error Lens** - Inline error highlighting
 - **💫 Power Mode** - Particle effects for ultimate superhero coding
 
-## 📄 License
+## License
 
 Released under the [MIT License](LICENSE) - free for all of Gotham to use.
 
@@ -291,17 +287,17 @@ The **Batman: The Animated Series** (1992-1995) revolutionized animation with it
 
 This theme captures that revolutionary spirit, bringing the same innovation to your coding environment. Every color has been carefully selected from the original animation cells, ensuring an authentic experience that honors Bruce Timm's iconic artistic vision.
 
-### 🎭 **The Dark Deco Philosophy**
+### **The Dark Deco Philosophy**
 
 Just as the animated series painted light onto darkness, this theme illuminates your code with carefully chosen highlights against Gotham's midnight canvas. It's not just about aesthetics - it's about creating an environment where creativity flourishes and great code emerges from the digital shadows.
 
-### 🌆 **Gotham After Dark**
+### **Gotham After Dark**
 
 Whether you're debugging at 3 AM or crafting elegant algorithms at dawn, Batman TAS Theme provides the perfect backdrop for your coding adventures. Like Batman himself, this theme works tirelessly in the background, ensuring you have everything you need to be the hero your codebase deserves.
 
 ---
 
-### 🌃 _"The night is darkest just before the dawn. And I promise you, the dawn is coming."_
+### _"The night is darkest just before the dawn. And I promise you, the dawn is coming."_
 
 **Happy coding, citizens of Gotham!** 🦇✨
 
@@ -312,7 +308,5 @@ _Transform your IDE into the Batcomputer with Batman TAS Theme - where every lin
 <div align="center">
 
 **[⬆️ Back to Top](#-batman-tas-theme)** • **[🚀 Get Started](#-installation)** • **[🎨 Colors](#-batman-tas-color-palette)** • **[⚙️ Setup](#-gotham-customization)**
-
-_Made with 🖤 in Gotham City_
 
 </div>
