@@ -1,4 +1,4 @@
-name: 🦇 Batman TAS Theme CI
+name: Batman TAS Theme CI
 
 on:
   push:
@@ -8,11 +8,11 @@ on:
 
 jobs:
   build:
-    name: 🔧 Build & Test
+    name: Build & Test
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v5
 
       - name: ⚡ Setup Node.js
@@ -21,10 +21,10 @@ jobs:
           node-version: '24'
           cache: 'npm'
 
-      - name: 📦 Install dependencies
+      - name: Install dependencies
         run: npm install -g @vscode/vsce
 
-      - name: 🔍 Validate package.json
+      - name: Validate package.json
         run: |
           if [ ! -f "package.json" ]; then
             echo "❌ package.json not found"
@@ -32,7 +32,7 @@ jobs:
           fi
           echo "✅ package.json found"
 
-      - name: 🎨 Validate theme file
+      - name: Validate theme file
         run: |
           if [ ! -f "themes/batman-tas-color-theme.json" ]; then
             echo "❌ Theme file not found"
@@ -43,13 +43,13 @@ jobs:
           node -e "JSON.parse(require('fs').readFileSync('themes/batman-tas-color-theme.json', 'utf8'))" || exit 1
           echo "✅ Theme file is valid JSON"
 
-      - name: 🏗️ Build extension
+      - name: Build extension
         run: vsce package --no-git-tag-version
 
-      - name: 📋 List generated files
+      - name: List generated files
         run: ls -la *.vsix
 
-      - name: 💾 Upload build artifacts
+      - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: batman-tas-theme-vsix
@@ -57,14 +57,14 @@ jobs:
           retention-days: 30
 
   validate-colors:
-    name: 🎨 Validate Batman TAS Colors
+    name: Validate Batman TAS Colors
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: 🔍 Check for Batman color consistency
+      - name: Check for Batman color consistency
         run: |
           echo "🦇 Validating Batman TAS-themed colors..."
 
@@ -111,10 +111,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: 🔍 Check color blind friendly compliance
+      - name: Check color blind friendly compliance
         run: |
           echo "♿ Checking color blind friendly compliance..."
 
