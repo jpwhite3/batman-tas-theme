@@ -1,10 +1,10 @@
 # 🦇 Batman TAS Theme
 
-[![CI Status](https://github.com/username/batman-tas-theme/workflows/🦇%20Batman%20TAS%20Theme%20CI/badge.svg)](https://github.com/username/batman-tas-theme/actions)
-[![Release](https://github.com/username/batman-tas-theme/workflows/🚀%20Release%20Batman%20TAS%20Theme/badge.svg)](https://github.com/username/batman-tas-theme/releases)
-[![Version](https://img.shields.io/github/v/release/username/batman-tas-theme?label=version&color=1a1a2e)](https://github.com/username/batman-tas-theme/releases)
+[![CI Status](https://github.com/jpwhite3/batman-tas-theme/workflows/🦇%20Batman%20TAS%20Theme%20CI/badge.svg)](https://github.com/jpwhite3/batman-tas-theme/actions)
+[![Release](https://github.com/jpwhite3/batman-tas-theme/workflows/🚀%20Release%20Batman%20TAS%20Theme/badge.svg)](https://github.com/jpwhite3/batman-tas-theme/releases)
+[![Version](https://img.shields.io/github/v/release/username/batman-tas-theme?label=version&color=1a1a2e)](https://github.com/jpwhite3/batman-tas-theme/releases)
 [![License](https://img.shields.io/github/license/username/batman-tas-theme?color=805ad5)](LICENSE)
-[![Gotham Approved](https://img.shields.io/badge/Gotham-Approved-e53e3e?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K)](https://github.com/username/batman-tas-theme)
+[![Gotham Approved](https://img.shields.io/badge/Gotham-Approved-e53e3e?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K)](https://github.com/jpwhite3/batman-tas-theme)
 
 ![Batman TAS Color Inspiration](images/batman-tas.png)
 
@@ -92,7 +92,7 @@ _Colors sampled from the iconic 1990s Batman: The Animated Series artwork_
 
 ### 🚀 **Quick Install (Recommended)**
 
-1. 📥 Download the latest `batman-tas-theme-2.0.0.vsix` from [releases](https://github.com/username/batman-tas-theme/releases)
+1. 📥 Download the latest `batman-tas-theme-2.0.0.vsix` from [releases](https://github.com/jpwhite3/batman-tas-theme/releases)
 2. 🔧 Open VS Code → `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
 3. 📋 Type "Extensions: Install from VSIX"
 4. 📁 Select the downloaded `.vsix` file
@@ -104,7 +104,7 @@ _Colors sampled from the iconic 1990s Batman: The Animated Series artwork_
 
 ```bash
 # Clone the Gotham repository
-git clone https://github.com/username/batman-tas-theme.git
+git clone https://github.com/jpwhite3/batman-tas-theme.git
 cd batman-tas-theme
 
 # Install the extension manager (if needed)
