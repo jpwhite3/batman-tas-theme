@@ -1,4 +1,4 @@
-name: 🦇 Darkman Theme CI
+name: 🦇 Batman TAS Theme CI
 
 on:
   push:
@@ -34,13 +34,13 @@ jobs:
         
     - name: 🎨 Validate theme file
       run: |
-        if [ ! -f "themes/darkman-color-theme.json" ]; then
+        if [ ! -f "themes/batman-tas-color-theme.json" ]; then
           echo "❌ Theme file not found"
           exit 1
         fi
         echo "✅ Theme file found"
         # Basic JSON validation
-        node -e "JSON.parse(require('fs').readFileSync('themes/darkman-color-theme.json', 'utf8'))" || exit 1
+        node -e "JSON.parse(require('fs').readFileSync('themes/batman-tas-color-theme.json', 'utf8'))" || exit 1
         echo "✅ Theme file is valid JSON"
         
     - name: 🏗️ Build extension
@@ -52,12 +52,12 @@ jobs:
     - name: 💾 Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: darkman-theme-vsix
+        name: batman-tas-theme-vsix
         path: '*.vsix'
         retention-days: 30
         
   validate-colors:
-    name: 🎨 Validate Batman Colors
+    name: 🎨 Validate Batman TAS Colors
     runs-on: ubuntu-latest
     
     steps:
@@ -66,45 +66,45 @@ jobs:
       
     - name: 🔍 Check for Batman color consistency
       run: |
-        echo "🦇 Validating Batman-themed colors..."
+        echo "🦇 Validating Batman TAS-themed colors..."
         
-        # Check for required Batman colors
-        if grep -q "#1E3A8A" themes/darkman-color-theme.json; then
+        # Check for required Batman TAS colors
+        if grep -q "#1E3A8A" themes/batman-tas-color-theme.json; then
           echo "✅ Navy blue buttons found"
         else
           echo "❌ Navy blue buttons missing"
           exit 1
         fi
         
-        if grep -q "#6366F1" themes/darkman-color-theme.json; then
-          echo "✅ Batman indigo accent found"
+        if grep -q "#805ad5" themes/batman-tas-color-theme.json; then
+          echo "✅ Joker purple accent found"
         else
-          echo "❌ Batman indigo accent missing"
+          echo "❌ Joker purple accent missing"
           exit 1
         fi
         
-        if grep -q "#8B2635" themes/darkman-color-theme.json; then
-          echo "✅ Dark red accents found"
+        if grep -q "#e53e3e" themes/batman-tas-color-theme.json; then
+          echo "✅ TAS danger red found"
         else
-          echo "❌ Dark red accents missing"
+          echo "❌ TAS danger red missing"
           exit 1
         fi
         
-        if grep -q "#7A8650\|#9FB36B" themes/darkman-color-theme.json; then
-          echo "✅ Joker green colors found"
+        if grep -q "#38a169" themes/batman-tas-color-theme.json; then
+          echo "✅ Robin emerald green found"
         else
-          echo "❌ Joker green colors missing"
+          echo "❌ Robin emerald green missing"
           exit 1
         fi
         
-        if grep -q "#4A3666" themes/darkman-color-theme.json; then
-          echo "✅ Villain purple found"
+        if grep -q "#1a1a2e" themes/batman-tas-color-theme.json; then
+          echo "✅ Gotham midnight background found"
         else
-          echo "❌ Villain purple missing"
+          echo "❌ Gotham midnight background missing"
           exit 1
         fi
         
-        echo "🦇 All Batman colors validated successfully!"
+        echo "🦇 All Batman TAS colors validated successfully!"
         
   accessibility-check:
     name: ♿ Accessibility Check
@@ -123,11 +123,11 @@ jobs:
           echo "⚠️  Warning: Check list selection colors for color blind compliance"
         fi
         
-        # Ensure we have high contrast text
-        if grep -q "#babed8" themes/darkman-color-theme.json; then
-          echo "✅ High contrast text color maintained"
+        # Ensure we have high contrast text (Batman Gray)
+        if grep -q "#4a5568\|#e2e8f0" themes/batman-tas-color-theme.json; then
+          echo "✅ High contrast TAS text colors maintained"
         else
-          echo "❌ High contrast text color missing"
+          echo "❌ High contrast TAS text colors missing"
           exit 1
         fi
         

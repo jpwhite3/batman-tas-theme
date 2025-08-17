@@ -1,4 +1,4 @@
-name: 🚀 Release Darkman Theme
+name: 🚀 Release Batman TAS Theme
 
 on:
   push:
@@ -31,30 +31,30 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: ${{ github.ref }}
-        release_name: 🦇 Darkman Theme v${{ steps.get_version.outputs.version }}
+        release_name: 🦇 Batman TAS Theme v${{ steps.get_version.outputs.version }}
         body: |
-          ## 🦇 Darkman Theme v${{ steps.get_version.outputs.version }}
+          ## 🦇 Batman TAS Theme v${{ steps.get_version.outputs.version }}
           
-          Batman-inspired VS Code theme with Batcomputer aesthetics, material design, and color blind friendly palette.
+          Professional VS Code theme inspired by Batman: The Animated Series (1990s) with authentic Dark Deco color palette extracted from the legendary animated series.
           
           ### ✨ Features
-          - Nearly black backgrounds with subtle blue hints
-          - Navy blue buttons with darker interaction feedback
-          - Batman color palette with Joker green and villain purple accents
-          - Subtle glow effects on interactive elements
-          - Color blind friendly design
+          - Gotham midnight backgrounds with deep navy blues from TAS
+          - Art Deco elegance with classic animation contrast
+          - Authentic Batman TAS color palette with Joker purple and Robin green
+          - Classic animation-style highlights and interactions
+          - Color blind friendly and WCAG compliant design
           
           ### 📦 Installation
           1. Download the `.vsix` file below
           2. In VS Code: `Ctrl+Shift+P` → "Extensions: Install from VSIX"
           3. Select the downloaded file
-          4. Choose "Darkman Theme" from color themes
+          4. Choose "Batman TAS Theme" from color themes
           
           ### 🔄 Changes
           See [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md) for details.
           
           ---
-          *"I am vengeance, I am the night, I am... a developer with excellent taste in themes."* 🦇
+          *"Experience Gotham's finest coding environment with the timeless Dark Deco aesthetic of Batman: The Animated Series."* 🦇🌆
         draft: false
         prerelease: false
 
@@ -84,8 +84,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ needs.create-release.outputs.upload_url }}
-        asset_path: ./darkman-theme-${{ needs.create-release.outputs.version }}.vsix
-        asset_name: darkman-theme-${{ needs.create-release.outputs.version }}.vsix
+        asset_path: ./batman-tas-theme-${{ needs.create-release.outputs.version }}.vsix
+        asset_name: batman-tas-theme-${{ needs.create-release.outputs.version }}.vsix
         asset_content_type: application/zip
         
   publish-marketplace:

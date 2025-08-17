@@ -38,7 +38,7 @@ jobs:
         node -e "
           const pkg = require('./package.json');
           pkg.version = '$PREVIEW_VERSION';
-          pkg.displayName = '🦇 Darkman Theme (PR Preview)';
+          pkg.displayName = '🦇 Batman TAS Theme (PR Preview)';
           pkg.description = pkg.description + ' - PR #${{ steps.pr_info.outputs.pr_number }} Preview Build';
           require('fs').writeFileSync('package.json', JSON.stringify(pkg, null, 2));
         "
@@ -47,7 +47,7 @@ jobs:
         
     - name: 📊 Generate theme statistics
       run: |
-        echo "## 🦇 Darkman Theme Preview Build" > preview-info.md
+        echo "## 🦇 Batman TAS Theme Preview Build" > preview-info.md
         echo "" >> preview-info.md
         echo "**PR #${{ steps.pr_info.outputs.pr_number }}** - Preview build for commit ${{ steps.pr_info.outputs.pr_sha }}" >> preview-info.md
         echo "" >> preview-info.md
@@ -55,31 +55,31 @@ jobs:
         echo "" >> preview-info.md
         
         # Count colors in theme
-        TOTAL_COLORS=$(grep -o '"#[0-9A-Fa-f]\{6\}[0-9A-Fa-f]*"' themes/darkman-color-theme.json | wc -l)
-        BATMAN_NAVY=$(grep -o '#1E3A8A' themes/darkman-color-theme.json | wc -l)
-        BATMAN_INDIGO=$(grep -o '#6366F1' themes/darkman-color-theme.json | wc -l)
-        DARK_RED=$(grep -o '#8B2635' themes/darkman-color-theme.json | wc -l)
-        JOKER_GREEN=$(grep -o -E '#7A8650|#9FB36B' themes/darkman-color-theme.json | wc -l)
-        VILLAIN_PURPLE=$(grep -o '#4A3666' themes/darkman-color-theme.json | wc -l)
+        TOTAL_COLORS=$(grep -o '"#[0-9A-Fa-f]\{6\}[0-9A-Fa-f]*"' themes/batman-tas-color-theme.json | wc -l)
+        GOTHAM_MIDNIGHT=$(grep -o '#1a1a2e' themes/batman-tas-color-theme.json | wc -l)
+        JOKER_PURPLE=$(grep -o '#805ad5' themes/batman-tas-color-theme.json | wc -l)
+        TAS_DANGER_RED=$(grep -o '#e53e3e' themes/batman-tas-color-theme.json | wc -l)
+        ROBIN_GREEN=$(grep -o '#38a169' themes/batman-tas-color-theme.json | wc -l)
+        BATMAN_GRAY=$(grep -o '#4a5568' themes/batman-tas-color-theme.json | wc -l)
         
         echo "- 🎨 **Total Colors**: $TOTAL_COLORS" >> preview-info.md
-        echo "- 🦇 **Batman Navy**: $BATMAN_NAVY occurrences" >> preview-info.md
-        echo "- 💙 **Batman Indigo**: $BATMAN_INDIGO occurrences" >> preview-info.md
-        echo "- 🔴 **Dark Red Accents**: $DARK_RED occurrences" >> preview-info.md
-        echo "- 🃏 **Joker Green**: $JOKER_GREEN occurrences" >> preview-info.md
-        echo "- 🟣 **Villain Purple**: $VILLAIN_PURPLE occurrences" >> preview-info.md
+        echo "- 🌃 **Gotham Midnight**: $GOTHAM_MIDNIGHT occurrences" >> preview-info.md
+        echo "- 🟣 **Joker Purple**: $JOKER_PURPLE occurrences" >> preview-info.md
+        echo "- 🔴 **TAS Danger Red**: $TAS_DANGER_RED occurrences" >> preview-info.md
+        echo "- 🟢 **Robin Green**: $ROBIN_GREEN occurrences" >> preview-info.md
+        echo "- ⬜ **Batman Gray**: $BATMAN_GRAY occurrences" >> preview-info.md
         echo "" >> preview-info.md
         echo "### 📦 Installation" >> preview-info.md
         echo "" >> preview-info.md
         echo "Download the preview `.vsix` file from the artifacts and install it in VS Code:" >> preview-info.md
         echo '```bash' >> preview-info.md
-        echo 'code --install-extension darkman-theme-*-pr${{ steps.pr_info.outputs.pr_number }}-*.vsix' >> preview-info.md
+        echo 'code --install-extension batman-tas-theme-*-pr${{ steps.pr_info.outputs.pr_number }}-*.vsix' >> preview-info.md
         echo '```' >> preview-info.md
         
     - name: 💾 Upload preview artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: darkman-theme-preview-pr${{ steps.pr_info.outputs.pr_number }}
+        name: batman-tas-theme-preview-pr${{ steps.pr_info.outputs.pr_number }}
         path: |
           *.vsix
           preview-info.md
