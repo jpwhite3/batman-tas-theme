@@ -1,8 +1,8 @@
 {
   "name": "darkman-theme",
   "displayName": "Darkman Theme",
-  "description": "A professional material design dark theme with color blind friendly colors and unified panel appearance",
-  "version": "1.0.0",
+  "description": "A Batman-inspired VS Code theme with villain and Bat-family language-specific color schemes. Features Penguin (Python), Two-Face (Java), Riddler (Kotlin), Bane (Go), Scarecrow (JavaScript), Mr. Freeze (C#), Robin (JSON), Nightwing (YAML), and Catwoman (Markdown) color palettes.",
+  "version": "2.0.0",
   "publisher": "darkman",
   "engines": {
     "vscode": "^1.74.0"
@@ -12,6 +12,19 @@
   ],
   "keywords": [
     "dark",
+    "batman",
+    "villains",
+    "bat-family",
+    "language-specific",
+    "penguin",
+    "two-face",
+    "riddler",
+    "bane",
+    "scarecrow",
+    "mr-freeze",
+    "robin",
+    "nightwing",
+    "catwoman",
     "material design",
     "color blind friendly",
     "accessible",

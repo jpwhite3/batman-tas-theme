@@ -2,11 +2,9 @@
   "name": "Darkman Theme",
   "type": "dark",
   "colors": {
-    // Nearly black with dark blue hints and subtle glow
     "focusBorder": "#6366F180",
     "foreground": "#babed8",
     
-    // Button colors - navy blue with Batman-like polish and subtle glow
     "button.background": "#1E3A8A",
     "button.foreground": "#E8E8E8",
     "button.hoverBackground": "#1E2951",
@@ -15,7 +13,6 @@
     "button.secondaryForeground": "#babed8",
     "button.secondaryHoverBackground": "#2D2F33",
     
-    // Input and dropdown colors - much darker with muted blue hints and focus glow
     "dropdown.background": "#08090B",
     "dropdown.border": "#1A1C2A",
     "input.background": "#0A0B0D",
@@ -29,7 +26,6 @@
     "inputOption.activeBackground": "#1E3A8A",
     "inputOption.activeForeground": "#E8E8E8",
     
-    // List colors - using original contrast with darker backgrounds and glow
     "list.activeSelectionBackground": "#090B1080",
     "list.activeSelectionForeground": "#6366F1",
     "list.dropBackground": "#f0717880",
@@ -41,48 +37,42 @@
     "list.inactiveSelectionForeground": "#6366F1",
     "list.hoverForeground": "#E8E8E8",
     
-    // Unified panel appearance - nearly black with subtle color hints
     "activityBar.background": "#060609",
     "activityBar.border": "#1A1C2A",
     "activityBar.dropBackground": "#f0717880",
     "activityBarBadge.background": "#1E3A8A",
     "activityBarBadge.foreground": "#E8E8E8",
     
-    // Badge colors with villain purple hint
     "badge.background": "#4A3666",
     "badge.foreground": "#babed8",
     
-    // Sidebar unified appearance - nearly black with muted green hint
     "sideBar.background": "#070708",
     "sideBar.border": "#1A1C2A",
-    "sideBar.foreground": "#4B526D",
-    "sideBarTitle.foreground": "#babed8",
+    "sideBar.foreground": "#8A92B2",
+    "sideBarTitle.foreground": "#E8E8E8",
     "sideBarSectionHeader.background": "#0A0A0C",
     "sideBarSectionHeader.border": "#1A1C2A",
-    "sideBarSectionHeader.foreground": "#6366F1",
+    "sideBarSectionHeader.foreground": "#7BB3F0",
     
-    // Editor group and tabs - nearly black with super dark blue borders
     "editorGroup.border": "#1A1C2A",
     "editorGroup.dropBackground": "#f0717880",
     "editorGroup.focusedEmptyBorder": "#f07178",
     "editorGroupHeader.tabsBackground": "#08090B",
     "editorGroupHeader.tabsBorder": "#1A1C2A",
     
-    // Tab styling for unified appearance with subtle purple hint and glow
     "tab.border": "#1A1C2A",
     "tab.activeBorder": "#1E3A8A",
     "tab.activeBorderTop": "#6366F160",
     "tab.activeForeground": "#E8E8E8",
     "tab.activeBackground": "#0C0D0F",
     "tab.inactiveBackground": "#08090B",
-    "tab.inactiveForeground": "#4B526D",
+    "tab.inactiveForeground": "#8A92B2",
     "tab.activeModifiedBorder": "#8B2635",
     "tab.inactiveModifiedBorder": "#5C1A20",
     "tab.unfocusedActiveForeground": "#babed8",
     "tab.unfocusedActiveModifiedBorder": "#8B2635",
     "tab.unfocusedInactiveModifiedBorder": "#5C1A20",
     
-    // Editor colors - dark with very subtle blue tint
     "editor.background": "#0B0C0E",
     "editor.foreground": "#babed8",
     "editorLineNumber.foreground": "#3B3F5180",
@@ -98,7 +88,6 @@
     "editor.rangeHighlightBackground": "#FFFFFF0d",
     "editorWhitespace.foreground": "#babed840",
     
-    // Editor widgets with muted colors and subtle glow
     "editorWidget.background": "#060709",
     "editorWidget.border": "#1E3A8A80",
     "editorWidget.resizeBorder": "#1E3A8A80",
@@ -106,7 +95,6 @@
     "editorHoverWidget.border": "#6366F140",
     "editorMarkerNavigation.background": "#babed808",
     
-    // Peek view colors with subtle palette integration and glow
     "peekView.border": "#6366F160",
     "peekViewEditor.background": "#0A0B0D",
     "peekViewEditor.matchHighlightBackground": "#717CB450",
@@ -117,18 +105,16 @@
     "peekViewTitle.background": "#0A0B0D",
     "peekViewTitleDescription.foreground": "#babed860",
     
-    // Panel unified appearance - nearly black with subtle gray hint
     "panel.background": "#060709",
     "panel.border": "#1A1C2A",
     "panel.dropBackground": "#babed8",
     "panelTitle.activeBorder": "#1E3A8A",
     "panelTitle.activeForeground": "#E8E8E8",
-    "panelTitle.inactiveForeground": "#babed8",
+    "panelTitle.inactiveForeground": "#C5CAE9",
     
-    // Status bar unified - nearly black with muted color
     "statusBar.background": "#050608",
     "statusBar.border": "#1A1C2A",
-    "statusBar.foreground": "#4B526D",
+    "statusBar.foreground": "#8A92B2",
     "statusBar.debuggingBackground": "#4A3666",
     "statusBar.debuggingForeground": "#E8E8E8",
     "statusBar.noFolderBackground": "#08090B",
@@ -137,21 +123,18 @@
     "statusBarItem.remoteBackground": "#1E3A8A",
     "statusBarItem.remoteForeground": "#E8E8E8",
     
-    // Title bar unified - nearly black
     "titleBar.activeBackground": "#050608",
     "titleBar.activeForeground": "#babed8",
     "titleBar.inactiveBackground": "#050608",
-    "titleBar.inactiveForeground": "#4B526D",
+    "titleBar.inactiveForeground": "#8A92B2",
     "titleBar.border": "#1A1C2A",
     
-    // Picker and quick input with muted colors
     "pickerGroup.border": "#2C2F40",
     "pickerGroup.foreground": "#6366F1",
     "quickInput.background": "#08090B",
-    "quickInput.foreground": "#4B526D",
+    "quickInput.foreground": "#8A92B2",
     "quickInputList.focusBackground": "#1A1D24",
     
-    // Terminal colors - using original palette (color blind friendly)
     "terminal.ansiBlack": "#000000",
     "terminal.ansiBlue": "#82AAFF",
     "terminal.ansiBrightBlack": "#464B5D",
@@ -172,88 +155,71 @@
     "terminalCursor.background": "#000000",
     "terminalCommandGuide.foreground": "#3B3F5180",
     
-    // Debug colors
     "debugToolBar.background": "#0A0B0F",
     "debugConsole.errorForeground": "#B83A4A",
     "debugConsole.infoForeground": "#8B5FBF",
     "debugConsole.warningForeground": "#FFCB6B",
     
-    // Selection and scrollbar
     "selection.background": "#00000080",
     "scrollbar.shadow": "#00000030",
     "widget.shadow": "#00000030",
     
-    // Editor ruler and links
     "editorRuler.foreground": "#3B3F51",
     "editorLink.activeForeground": "#babed8",
     "progressBar.background": "#1E3A8A",
     
-    // Tree and indentation
     "tree.indentGuidesStroke": "#3B3F51",
     
-    // Text links
     "textLink.foreground": "#6366F1",
     "textLink.activeForeground": "#babed8",
     
-    // Sash hover
     "sash.hoverBorder": "#6366F180",
     
-    // Bracket matching
     "editorBracketMatch.border": "#FFCC0050",
     "editorBracketMatch.background": "#0A0B0F",
     
-    // Overview ruler
     "editorOverviewRuler.border": "#0A0B0F",
     "editorOverviewRuler.errorForeground": "#8B263550",
     "editorOverviewRuler.infoForeground": "#82AAFF40",
     "editorOverviewRuler.warningForeground": "#FFCB6B40",
     
-    // Editor diagnostics
     "editorInfo.foreground": "#82AAFF70",
     "editorWarning.foreground": "#FFCB6B70",
     "editorError.foreground": "#8B263580",
     
-    // Input validation
     "inputValidation.errorBorder": "#8B2635",
     "inputValidation.infoBorder": "#82AAFF",
     "inputValidation.warningBorder": "#FFCB6B",
     
-    // Editor suggest widget
     "editorSuggestWidget.background": "#0A0B0F",
     "editorSuggestWidget.foreground": "#babed8",
     "editorSuggestWidget.highlightForeground": "#6366F1",
     "editorSuggestWidget.selectedBackground": "#00000050",
     "editorSuggestWidget.border": "#FFFFFF10",
     
-    // Diff editor - using original colors (color blind friendly)
     "diffEditor.insertedTextBackground": "#7A865020",
     "diffEditor.removedTextBackground": "#8B263520",
     
-    // Notifications with muted background
     "notifications.background": "#08090B",
     "notifications.foreground": "#babed8",
     "notificationLink.foreground": "#6366F1",
     
-    // Extension button - navy blue with darker hover
     "extensionButton.prominentBackground": "#4A5D23",
     "extensionButton.prominentHoverBackground": "#3A4A1C",
     "extensionButton.prominentForeground": "#E8E8E8",
     
-    // Git decorations - using original colors (color blind friendly)
     "gitDecoration.deletedResourceForeground": "#8B263580",
     "gitDecoration.conflictingResourceForeground": "#FFCB6B90",
     "gitDecoration.modifiedResourceForeground": "#82AAFF90",
     "gitDecoration.untrackedResourceForeground": "#7A865090",
     "gitDecoration.ignoredResourceForeground": "#4B526D90",
     
-    // Breadcrumb with palette integration
     "breadcrumb.background": "#08090B",
-    "breadcrumb.foreground": "#4B526D",
+    "breadcrumb.foreground": "#8A92B2",
     "breadcrumb.focusForeground": "#babed8",
     "breadcrumb.activeSelectionForeground": "#6366F1",
     "breadcrumbPicker.background": "#060709",
     
-    // Menu with muted palette colors
     "menu.background": "#08090B",
     "menu.foreground": "#babed8",
     "menu.selectionBackground": "#1A1D24",
@@ -264,7 +230,6 @@
     "menubar.selectionForeground": "#6366F1",
     "menubar.selectionBorder": "#1A1C2A",
     
-    // Settings with subtle color integration
     "settings.dropdownForeground": "#babed8",
     "settings.dropdownBackground": "#060709",
     "settings.numberInputForeground": "#babed8",
@@ -276,12 +241,10 @@
     "settings.checkboxBackground": "#060709",
     "settings.checkboxForeground": "#babed8",
     
-    // List filter widget with muted colors
     "listFilterWidget.background": "#2C2F40",
     "listFilterWidget.outline": "#1A1C2A",
     "listFilterWidget.noMatchesOutline": "#8B2635",
     
-    // Notebook
     "notebook.focusedCellBorder": "#6366F1",
     "notebook.inactiveFocusedCellBorder": "#6366F160"
   },
@@ -294,7 +257,7 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#757575"
+        "foreground": "#8B2635"
       }
     },
     {
@@ -323,7 +286,7 @@
         "invalid.illegal"
       ],
       "settings": {
-        "foreground": "#FF5722"
+        "foreground": "#DC143C"
       }
     },
     {
@@ -334,7 +297,7 @@
         "storage.modifier"
       ],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#9370DB"
       }
     },
     {
@@ -354,7 +317,7 @@
         "keyword.other.substitution"
       ],
       "settings": {
-        "foreground": "#8B5FBF"
+        "foreground": "#B8860B"
       }
     },
     {
@@ -365,7 +328,7 @@
         "markup.deleted.git_gutter"
       ],
       "settings": {
-        "foreground": "#B83A4A"
+        "foreground": "#7BB3F0"
       }
     },
     {
@@ -378,7 +341,7 @@
         "keyword.other.special-method"
       ],
       "settings": {
-        "foreground": "#82AAFF"
+        "foreground": "#87CEEB"
       }
     },
     {
@@ -387,7 +350,7 @@
         "meta.block variable.other"
       ],
       "settings": {
-        "foreground": "#8B2635"
+        "foreground": "#4A90E2"
       }
     },
     {
@@ -397,7 +360,7 @@
         "string.other.link"
       ],
       "settings": {
-        "foreground": "#8B2635"
+        "foreground": "#4A90E2"
       }
     },
     {
@@ -413,7 +376,7 @@
         "keyword.other"
       ],
       "settings": {
-        "foreground": "#FFCB6B"
+        "foreground": "#F1C40F"
       }
     },
     {
@@ -428,7 +391,7 @@
         "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
       ],
       "settings": {
-        "foreground": "#9FB36B"
+        "foreground": "#2ECC71"
       }
     },
     {
@@ -444,7 +407,7 @@
         "support.type.sys-types"
       ],
       "settings": {
-        "foreground": "#FFCB6B"
+        "foreground": "#F1C40F"
       }
     },
     {
@@ -453,7 +416,7 @@
         "support.type"
       ],
       "settings": {
-        "foreground": "#B2CCD6"
+        "foreground": "#3498DB"
       }
     },
     {
@@ -467,7 +430,7 @@
         "source.postcss support.type.property-name"
       ],
       "settings": {
-        "foreground": "#B2CCD6"
+        "foreground": "#3498DB"
       }
     },
     {
@@ -478,7 +441,7 @@
         "variable.other.class.js"
       ],
       "settings": {
-        "foreground": "#FF5722"
+        "foreground": "#708090"
       }
     },
     {
@@ -488,7 +451,7 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#FF5722"
+        "foreground": "#708090"
       }
     },
     {
@@ -498,7 +461,7 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#82AAFF"
+        "foreground": "#87CEEB"
       }
     },
     {
@@ -508,7 +471,7 @@
         "variable.function.constructor"
       ],
       "settings": {
-        "foreground": "#82AAFF"
+        "foreground": "#87CEEB"
       }
     },
     {
@@ -517,7 +480,7 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#CD853F"
       }
     },
     {
@@ -528,7 +491,7 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#FF9800"
+        "foreground": "#D2691E"
       }
     },
     {
@@ -537,7 +500,7 @@
         "entity.other.attribute-name.class"
       ],
       "settings": {
-        "foreground": "#FF9800"
+        "foreground": "#CD853F"
       }
     },
     {
@@ -546,7 +509,7 @@
         "source.sass keyword.control"
       ],
       "settings": {
-        "foreground": "#82AAFF"
+        "foreground": "#87CEEB"
       }
     },
     {
@@ -555,7 +518,7 @@
         "markup.inserted"
       ],
       "settings": {
-        "foreground": "#4CAF50"
+        "foreground": "#27AE60"
       }
     },
     {
@@ -564,7 +527,7 @@
         "markup.deleted"
       ],
       "settings": {
-        "foreground": "#FF5722"
+        "foreground": "#708090"
       }
     },
     {
@@ -573,7 +536,7 @@
         "markup.changed"
       ],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#5DADE2"
       }
     },
     {
@@ -582,7 +545,7 @@
         "string.regexp"
       ],
       "settings": {
-        "foreground": "#8B5FBF"
+        "foreground": "#A8E6CF"
       }
     },
     {
@@ -591,7 +554,7 @@
         "constant.character.escape"
       ],
       "settings": {
-        "foreground": "#8B5FBF"
+        "foreground": "#A8E6CF"
       }
     },
     {
@@ -613,7 +576,7 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#82AAFF"
+        "foreground": "#87CEEB"
       }
     },
     {
@@ -623,7 +586,7 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#FF5722"
+        "foreground": "#708090"
       }
     },
     {
@@ -632,7 +595,7 @@
         "source.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#5DADE2"
       }
     },
     {
@@ -641,7 +604,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#FF9800"
+        "foreground": "#4A90A4"
       }
     },
     {
@@ -650,7 +613,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#FF5722"
+        "foreground": "#708090"
       }
     },
     {
@@ -659,7 +622,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#FF5722"
+        "foreground": "#708090"
       }
     },
     {
@@ -668,7 +631,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#82AAFF"
+        "foreground": "#87CEEB"
       }
     },
     {
@@ -677,7 +640,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#82AAFF"
+        "foreground": "#87CEEB"
       }
     },
     {
@@ -686,7 +649,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#FF5722"
+        "foreground": "#708090"
       }
     },
     {
@@ -695,7 +658,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#5DADE2"
       }
     },
     {
@@ -704,7 +667,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#4CAF50"
+        "foreground": "#27AE60"
       }
     },
     {
@@ -723,7 +686,7 @@
         "text.html.markdown markup.inline.raw.markdown"
       ],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#5DADE2"
       }
     },
     {
@@ -732,7 +695,7 @@
         "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown"
       ],
       "settings": {
-        "foreground": "#8B5FBF"
+        "foreground": "#A8E6CF"
       }
     },
     {
@@ -743,7 +706,7 @@
         "markup.heading.markdown punctuation.definition.heading.markdown"
       ],
       "settings": {
-        "foreground": "#4CAF50"
+        "foreground": "#27AE60"
       }
     },
     {
@@ -753,7 +716,7 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#FF5722"
+        "foreground": "#708090"
       }
     },
     {
@@ -764,7 +727,7 @@
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#FF5722"
+        "foreground": "#708090"
       }
     },
     {
@@ -779,7 +742,7 @@
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#FF5722"
+        "foreground": "#708090"
       }
     },
     {
@@ -789,7 +752,7 @@
       ],
       "settings": {
         "fontStyle": "underline",
-        "foreground": "#FF9800"
+        "foreground": "#4A90A4"
       }
     },
     {
@@ -798,7 +761,7 @@
         "markup.quote punctuation.definition.blockquote.markdown"
       ],
       "settings": {
-        "foreground": "#8B5FBF"
+        "foreground": "#A8E6CF"
       }
     },
     {
@@ -816,7 +779,7 @@
         "string.other.link.title.markdown"
       ],
       "settings": {
-        "foreground": "#82AAFF"
+        "foreground": "#87CEEB"
       }
     },
     {
@@ -825,7 +788,7 @@
         "string.other.link.description.title.markdown"
       ],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#5DADE2"
       }
     },
     {
@@ -834,7 +797,7 @@
         "constant.other.reference.link.markdown"
       ],
       "settings": {
-        "foreground": "#FF9800"
+        "foreground": "#4A90A4"
       }
     },
     {
@@ -843,7 +806,7 @@
         "markup.raw.block"
       ],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#5DADE2"
       }
     },
     {
@@ -881,7 +844,7 @@
         "variable.language.fenced.markdown"
       ],
       "settings": {
-        "foreground": "#8B5FBF"
+        "foreground": "#A8E6CF"
       }
     },
     {
@@ -891,7 +854,7 @@
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#8B5FBF"
+        "foreground": "#A8E6CF"
       }
     },
     {
