@@ -1,6 +1,6 @@
-# 🦇 Darkman Theme CI/CD Pipeline
+# 🦇 Batman TAS Theme CI/CD Pipeline
 
-This directory contains the complete CI/CD pipeline for the Darkman Theme VS Code extension, built with Batman-level precision and automation.
+This directory contains the complete CI/CD pipeline for the Batman TAS Theme VS Code extension, built with the precision and timeless quality of the 1990s animated series.
 
 ## 🚀 Workflows Overview
 
@@ -9,26 +9,26 @@ This directory contains the complete CI/CD pipeline for the Darkman Theme VS Cod
 
 **Jobs**:
 - 🔧 **Build & Test**: Validates package structure and builds extension
-- 🎨 **Validate Batman Colors**: Ensures theme maintains Batman aesthetic consistency
+- 🎨 **Validate Batman TAS Colors**: Ensures theme maintains authentic TAS aesthetic consistency
 - ♿ **Accessibility Check**: Validates color blind friendly compliance
 
 **Key Features**:
 - Validates `package.json` and theme JSON structure
-- Checks for required Batman colors (Navy blue, Indigo, Dark red, Joker green, Villain purple)  
-- Ensures high contrast text colors are maintained
+- Checks for required Batman TAS colors (Gotham Midnight, Joker Purple, TAS Danger Red, Robin Green, Batman Gray)
+- Ensures high contrast text colors are maintained for authentic TAS experience
 - Uploads build artifacts for 30 days
-- Comprehensive error reporting with Batman-themed messages
+- Comprehensive error reporting with Batman TAS-themed messages
 
 ### 2. **Release Pipeline** (`release.yml`)
 **Triggers**: Version tags (`v*`)
 
 **Jobs**:
-- 🎯 **Create Release**: Generates GitHub release with Batman-themed description
+- 🎯 **Create Release**: Generates GitHub release with Batman TAS-themed description
 - 🏗️ **Build & Publish**: Packages extension and uploads to release
 - 📢 **Marketplace Publish**: Publishes to VS Code Marketplace (if `VSCE_PAT` secret exists)
 
 **Key Features**:
-- Automatic release creation with Batman quotes and feature highlights
+- Automatic release creation with authentic TAS quotes and Dark Deco feature highlights
 - Professional release notes with installation instructions
 - Conditional marketplace publishing (only if secrets are configured)
 - Automatic VSIX file attachment to releases
@@ -38,12 +38,12 @@ This directory contains the complete CI/CD pipeline for the Darkman Theme VS Cod
 
 **Jobs**:
 - 🎨 **Generate PR Preview**: Creates preview build with PR-specific versioning
-- 📊 **Theme Statistics**: Analyzes color usage and Batman theme compliance
+- 📊 **Theme Statistics**: Analyzes color usage and Batman TAS theme compliance
 - 💬 **PR Comments**: Automatically comments with preview info and download links
 
 **Key Features**:
 - Preview builds with PR number and commit SHA in version
-- Automated theme statistics (color counts, Batman color usage)
+- Automated theme statistics (color counts, Batman TAS color usage)
 - Interactive PR comments with installation instructions
 - 7-day artifact retention for PR previews
 
@@ -81,17 +81,17 @@ For marketplace publishing, add to repository secrets:
 - ✅ Successful VSCE package creation
 - ✅ No build errors or warnings
 
-### Batman Theme Compliance
-- ✅ Navy blue buttons (`#1E3A8A`)
-- ✅ Batman indigo accent (`#6366F1`)  
-- ✅ Dark red accents (`#8B2635`)
-- ✅ Joker green colors (`#7A8650`, `#9FB36B`)
-- ✅ Villain purple (`#4A3666`)
+### Batman TAS Theme Compliance
+- ✅ Gotham Midnight background (`#1a1a2e`)
+- ✅ Joker Purple accent (`#805ad5`)
+- ✅ TAS Danger Red (`#e53e3e`)
+- ✅ Robin Green (`#38a169`)
+- ✅ Batman Gray text (`#4a5568`)
 
 ### Accessibility Standards
-- ✅ High contrast text maintained (`#babed8`)
+- ✅ High contrast TAS text maintained (`#4a5568`, `#e2e8f0`)
 - ✅ No problematic red-green combinations
-- ✅ Color blind friendly design principles
+- ✅ Color blind friendly Dark Deco design principles
 
 ## 🚀 Release Process
 
@@ -101,11 +101,11 @@ For marketplace publishing, add to repository secrets:
 npm version patch|minor|major
 
 # Create and push tag
-git push origin v1.1.0
+git push origin v2.1.0
 ```
 
 The release workflow will automatically:
-1. Create GitHub release with professional description
+1. Create GitHub release with Batman TAS professional description
 2. Build and package extension
 3. Upload `.vsix` file to release
 4. Publish to VS Code Marketplace (if configured)
@@ -117,7 +117,7 @@ If needed, you can manually trigger releases:
 npm run build
 
 # Create release manually
-gh release create v1.1.0 darkman-theme-1.1.0.vsix --title "🦇 Darkman Theme v1.1.0"
+gh release create v2.1.0 batman-tas-theme-2.1.0.vsix --title "🦇 Batman TAS Theme v2.1.0"
 ```
 
 ## 📊 Monitoring & Analytics
@@ -131,7 +131,7 @@ gh release create v1.1.0 darkman-theme-1.1.0.vsix --title "🦇 Darkman Theme v1
 ### Build Metrics
 Each workflow provides:
 - Build success/failure rates
-- Theme color statistics
+- Batman TAS theme color statistics
 - Accessibility compliance status
 - Artifact generation and retention
 
@@ -145,9 +145,9 @@ Each workflow provides:
 - Verify VSCE can package successfully
 
 **Color Validation Fails**:
-- Ensure required Batman colors are present
+- Ensure required Batman TAS colors are present
 - Check color hex codes match exactly
-- Verify theme maintains Batman aesthetic
+- Verify theme maintains authentic TAS aesthetic
 
 **Marketplace Publishing Fails**:
 - Verify `VSCE_PAT` secret is set correctly
@@ -166,17 +166,17 @@ npm run build
 gh run list --workflow=ci.yml
 ```
 
-## 🦇 Batman Development Philosophy
+## 🦇 Batman TAS Development Philosophy
 
-The CI/CD pipeline embodies Batman's approach to excellence:
-- **Precision**: Every build is validated thoroughly
-- **Reliability**: Automated processes ensure consistency  
-- **Quality**: Multiple quality gates maintain standards
-- **Accessibility**: Inclusive design is enforced
-- **Security**: Secure secrets management and permissions
+The CI/CD pipeline embodies the timeless quality of Batman: The Animated Series:
+- **Precision**: Every build validated with Dark Deco attention to detail
+- **Timeless Quality**: Automated processes ensure consistent excellence
+- **Authentic Standards**: Multiple quality gates maintain TAS aesthetic integrity
+- **Accessibility**: Inclusive design principles from the legendary series
+- **Professional Polish**: Secure processes worthy of Bruce Timm's vision
 
 ---
 
-**"The night is darkest just before the dawn. And I promise you, the dawn is coming."** 🦇
+**"The night is darkest just before the dawn. And I promise you, the dawn is coming."** 🦇🌃
 
-*The Darkman Theme CI/CD pipeline ensures that every release maintains the high standards worthy of the Dark Knight himself.*
+*The Batman TAS Theme CI/CD pipeline ensures that every release maintains the timeless standards of excellence that made the animated series legendary.*
