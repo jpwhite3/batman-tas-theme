@@ -1,4 +1,4 @@
-name: 🚀 Release Batman TAS Theme
+name: Release Batman TAS Theme
 
 on:
   push:
@@ -7,116 +7,116 @@ on:
 
 jobs:
   create-release:
-    name: 🎯 Create Release
+    name: Create Release
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    
+
     outputs:
       upload_url: ${{ steps.create_release.outputs.upload_url }}
       version: ${{ steps.get_version.outputs.version }}
-    
+
     steps:
-    - name: 📥 Checkout repository
-      uses: actions/checkout@v5
-      
-    - name: 🏷️ Get version from tag
-      id: get_version
-      run: echo "version=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
-      
-    - name: 📝 Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: 🦇 Batman TAS Theme v${{ steps.get_version.outputs.version }}
-        body: |
-          ## 🦇 Batman TAS Theme v${{ steps.get_version.outputs.version }}
-          
-          Professional VS Code theme inspired by Batman: The Animated Series (1990s) with authentic Dark Deco color palette extracted from the legendary animated series.
-          
-          ### ✨ Features
-          - Gotham midnight backgrounds with deep navy blues from TAS
-          - Art Deco elegance with classic animation contrast
-          - Authentic Batman TAS color palette with Joker purple and Robin green
-          - Classic animation-style highlights and interactions
-          - Color blind friendly and WCAG compliant design
-          
-          ### 📦 Installation
-          1. Download the `.vsix` file below
-          2. In VS Code: `Ctrl+Shift+P` → "Extensions: Install from VSIX"
-          3. Select the downloaded file
-          4. Choose "Batman TAS Theme" from color themes
-          
-          ### 🔄 Changes
-          See [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md) for details.
-          
-          ---
-          *"Experience Gotham's finest coding environment with the timeless Dark Deco aesthetic of Batman: The Animated Series."* 🦇🌆
-        draft: false
-        prerelease: false
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Get version from tag
+        id: get_version
+        run: echo "version=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Batman TAS Theme v${{ steps.get_version.outputs.version }}
+          body: |
+            ## 🦇 Batman TAS Theme v${{ steps.get_version.outputs.version }}
+
+            Professional VS Code theme inspired by Batman: The Animated Series (1990s) with authentic Dark Deco color palette extracted from the legendary animated series.
+
+            ### ✨ Features
+            - Gotham midnight backgrounds with deep navy blues from TAS
+            - Art Deco elegance with classic animation contrast
+            - Authentic Batman TAS color palette with Joker purple and Robin green
+            - Classic animation-style highlights and interactions
+            - Color blind friendly and WCAG compliant design
+
+            ### 📦 Installation
+            1. Download the `.vsix` file below
+            2. In VS Code: `Ctrl+Shift+P` → "Extensions: Install from VSIX"
+            3. Select the downloaded file
+            4. Choose "Batman TAS Theme" from color themes
+
+            ### 🔄 Changes
+            See [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md) for details.
+
+            ---
+            *"Experience Gotham's finest coding environment with the timeless Dark Deco aesthetic of Batman: The Animated Series."* 🦇🌆
+          draft: false
+          prerelease: false
 
   build-and-publish:
-    name: 🏗️ Build & Publish
+    name: Build & Publish
     needs: create-release
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: 📥 Checkout repository
-      uses: actions/checkout@v5
-      
-    - name: ⚡ Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-        
-    - name: 📦 Install VSCE
-      run: npm install -g @vscode/vsce
-      
-    - name: 🏗️ Package extension
-      run: vsce package --no-git-tag-version
-      
-    - name: 📤 Upload release asset
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ needs.create-release.outputs.upload_url }}
-        asset_path: ./batman-tas-theme-${{ needs.create-release.outputs.version }}.vsix
-        asset_name: batman-tas-theme-${{ needs.create-release.outputs.version }}.vsix
-        asset_content_type: application/zip
-        
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install VSCE
+        run: npm install -g @vscode/vsce
+
+      - name: Package extension
+        run: vsce package --no-git-tag-version
+
+      - name: Upload release asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ needs.create-release.outputs.upload_url }}
+          asset_path: ./batman-tas-theme-${{ needs.create-release.outputs.version }}.vsix
+          asset_name: batman-tas-theme-${{ needs.create-release.outputs.version }}.vsix
+          asset_content_type: application/zip
+
   publish-marketplace:
-    name: 📢 Publish to VS Code Marketplace
+    name: Publish to VS Code Marketplace
     needs: [create-release, build-and-publish]
     runs-on: ubuntu-latest
     if: github.repository_owner != 'github' # Only run for non-GitHub repos
-    
+
     steps:
-    - name: 📥 Checkout repository
-      uses: actions/checkout@v5
-      
-    - name: ⚡ Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-        
-    - name: 📦 Install VSCE
-      run: npm install -g @vscode/vsce
-      
-    - name: 🚀 Publish to marketplace
-      env:
-        VSCE_PAT: ${{ secrets.VSCE_PAT }}
-      run: |
-        if [ -n "$VSCE_PAT" ]; then
-          echo "🚀 Publishing to VS Code Marketplace..."
-          vsce publish --pat $VSCE_PAT --no-git-tag-version
-          echo "✅ Published successfully!"
-        else
-          echo "⚠️  VSCE_PAT secret not found, skipping marketplace publish"
-          echo "To enable marketplace publishing:"
-          echo "1. Create a Personal Access Token at https://dev.azure.com/"
-          echo "2. Add it as VSCE_PAT secret in repository settings"
-        fi
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install VSCE
+        run: npm install -g @vscode/vsce
+
+      - name: Publish to marketplace
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: |
+          if [ -n "$VSCE_PAT" ]; then
+            echo "🚀 Publishing to VS Code Marketplace..."
+            vsce publish --pat $VSCE_PAT --no-git-tag-version
+            echo "✅ Published successfully!"
+          else
+            echo "⚠️  VSCE_PAT secret not found, skipping marketplace publish"
+            echo "To enable marketplace publishing:"
+            echo "1. Create a Personal Access Token at https://dev.azure.com/"
+            echo "2. Add it as VSCE_PAT secret in repository settings"
+          fi
