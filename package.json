@@ -46,7 +46,7 @@
     "validate": "node -e \"JSON.parse(require('fs').readFileSync('themes/batman-tas-color-theme.json', 'utf8'))\""
   },
   "devDependencies": {
-    "vsce": "^2.15.0"
+    "@vscode/vsce": "^3.6.0"
   },
   "repository": {
     "type": "git",

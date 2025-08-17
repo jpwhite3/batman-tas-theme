@@ -17,10 +17,10 @@ jobs:
     - name: ⚡ Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '20'
         
     - name: 📦 Install VSCE
-      run: npm install -g vsce
+      run: npm install -g @vscode/vsce
       
     - name: 🎯 Get PR info
       id: pr_info
@@ -56,18 +56,18 @@ jobs:
         
         # Count colors in theme
         TOTAL_COLORS=$(grep -o '"#[0-9A-Fa-f]\{6\}[0-9A-Fa-f]*"' themes/batman-tas-color-theme.json | wc -l)
-        GOTHAM_MIDNIGHT=$(grep -o '#1a1a2e' themes/batman-tas-color-theme.json | wc -l)
-        JOKER_PURPLE=$(grep -o '#805ad5' themes/batman-tas-color-theme.json | wc -l)
-        TAS_DANGER_RED=$(grep -o '#e53e3e' themes/batman-tas-color-theme.json | wc -l)
-        ROBIN_GREEN=$(grep -o '#38a169' themes/batman-tas-color-theme.json | wc -l)
-        BATMAN_GRAY=$(grep -o '#4a5568' themes/batman-tas-color-theme.json | wc -l)
+        BATMAN_NAVY=$(grep -o '#1E3A8A' themes/batman-tas-color-theme.json | wc -l)
+        BATMAN_INDIGO=$(grep -o '#6366F1' themes/batman-tas-color-theme.json | wc -l)
+        DARK_RED=$(grep -o '#8B2635' themes/batman-tas-color-theme.json | wc -l)
+        BATMAN_PURPLE=$(grep -o '#8B5FBF' themes/batman-tas-color-theme.json | wc -l)
+        MAIN_TEXT=$(grep -o '#babed8' themes/batman-tas-color-theme.json | wc -l)
         
         echo "- 🎨 **Total Colors**: $TOTAL_COLORS" >> preview-info.md
-        echo "- 🌃 **Gotham Midnight**: $GOTHAM_MIDNIGHT occurrences" >> preview-info.md
-        echo "- 🟣 **Joker Purple**: $JOKER_PURPLE occurrences" >> preview-info.md
-        echo "- 🔴 **TAS Danger Red**: $TAS_DANGER_RED occurrences" >> preview-info.md
-        echo "- 🟢 **Robin Green**: $ROBIN_GREEN occurrences" >> preview-info.md
-        echo "- ⬜ **Batman Gray**: $BATMAN_GRAY occurrences" >> preview-info.md
+        echo "- 🦇 **Batman Navy**: $BATMAN_NAVY occurrences" >> preview-info.md
+        echo "- 💙 **Batman Indigo**: $BATMAN_INDIGO occurrences" >> preview-info.md
+        echo "- 🔴 **Dark Red Accents**: $DARK_RED occurrences" >> preview-info.md
+        echo "- 🟣 **Batman Purple**: $BATMAN_PURPLE occurrences" >> preview-info.md
+        echo "- ⬜ **Main Text**: $MAIN_TEXT occurrences" >> preview-info.md
         echo "" >> preview-info.md
         echo "### 📦 Installation" >> preview-info.md
         echo "" >> preview-info.md

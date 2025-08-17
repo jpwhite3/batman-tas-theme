@@ -2,133 +2,133 @@ name: 🦇 Batman TAS Theme CI
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [main, develop]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
     name: 🔧 Build & Test
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: 📥 Checkout repository
-      uses: actions/checkout@v5
-      
-    - name: ⚡ Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-        cache: 'npm'
-        
-    - name: 📦 Install dependencies
-      run: npm install -g vsce
-      
-    - name: 🔍 Validate package.json
-      run: |
-        if [ ! -f "package.json" ]; then
-          echo "❌ package.json not found"
-          exit 1
-        fi
-        echo "✅ package.json found"
-        
-    - name: 🎨 Validate theme file
-      run: |
-        if [ ! -f "themes/batman-tas-color-theme.json" ]; then
-          echo "❌ Theme file not found"
-          exit 1
-        fi
-        echo "✅ Theme file found"
-        # Basic JSON validation
-        node -e "JSON.parse(require('fs').readFileSync('themes/batman-tas-color-theme.json', 'utf8'))" || exit 1
-        echo "✅ Theme file is valid JSON"
-        
-    - name: 🏗️ Build extension
-      run: vsce package --no-git-tag-version
-      
-    - name: 📋 List generated files
-      run: ls -la *.vsix
-      
-    - name: 💾 Upload build artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: batman-tas-theme-vsix
-        path: '*.vsix'
-        retention-days: 30
-        
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v5
+
+      - name: ⚡ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: 📦 Install dependencies
+        run: npm install -g @vscode/vsce
+
+      - name: 🔍 Validate package.json
+        run: |
+          if [ ! -f "package.json" ]; then
+            echo "❌ package.json not found"
+            exit 1
+          fi
+          echo "✅ package.json found"
+
+      - name: 🎨 Validate theme file
+        run: |
+          if [ ! -f "themes/batman-tas-color-theme.json" ]; then
+            echo "❌ Theme file not found"
+            exit 1
+          fi
+          echo "✅ Theme file found"
+          # Basic JSON validation
+          node -e "JSON.parse(require('fs').readFileSync('themes/batman-tas-color-theme.json', 'utf8'))" || exit 1
+          echo "✅ Theme file is valid JSON"
+
+      - name: 🏗️ Build extension
+        run: vsce package --no-git-tag-version
+
+      - name: 📋 List generated files
+        run: ls -la *.vsix
+
+      - name: 💾 Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: batman-tas-theme-vsix
+          path: '*.vsix'
+          retention-days: 30
+
   validate-colors:
     name: 🎨 Validate Batman TAS Colors
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: 📥 Checkout repository
-      uses: actions/checkout@v5
-      
-    - name: 🔍 Check for Batman color consistency
-      run: |
-        echo "🦇 Validating Batman TAS-themed colors..."
-        
-        # Check for required Batman TAS colors
-        if grep -q "#1E3A8A" themes/batman-tas-color-theme.json; then
-          echo "✅ Navy blue buttons found"
-        else
-          echo "❌ Navy blue buttons missing"
-          exit 1
-        fi
-        
-        if grep -q "#805ad5" themes/batman-tas-color-theme.json; then
-          echo "✅ Joker purple accent found"
-        else
-          echo "❌ Joker purple accent missing"
-          exit 1
-        fi
-        
-        if grep -q "#e53e3e" themes/batman-tas-color-theme.json; then
-          echo "✅ TAS danger red found"
-        else
-          echo "❌ TAS danger red missing"
-          exit 1
-        fi
-        
-        if grep -q "#38a169" themes/batman-tas-color-theme.json; then
-          echo "✅ Robin emerald green found"
-        else
-          echo "❌ Robin emerald green missing"
-          exit 1
-        fi
-        
-        if grep -q "#1a1a2e" themes/batman-tas-color-theme.json; then
-          echo "✅ Gotham midnight background found"
-        else
-          echo "❌ Gotham midnight background missing"
-          exit 1
-        fi
-        
-        echo "🦇 All Batman TAS colors validated successfully!"
-        
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v5
+
+      - name: 🔍 Check for Batman color consistency
+        run: |
+          echo "🦇 Validating Batman TAS-themed colors..."
+
+          # Check for required Batman TAS colors (existing theme colors)
+          if grep -q "#1E3A8A" themes/batman-tas-color-theme.json; then
+            echo "✅ Navy blue buttons found"
+          else
+            echo "❌ Navy blue buttons missing"
+            exit 1
+          fi
+
+          if grep -q "#6366F1" themes/batman-tas-color-theme.json; then
+            echo "✅ Batman indigo accent found"
+          else
+            echo "❌ Batman indigo accent missing"
+            exit 1
+          fi
+
+          if grep -q "#8B2635" themes/batman-tas-color-theme.json; then
+            echo "✅ Dark red accents found"
+          else
+            echo "❌ Dark red accents missing"
+            exit 1
+          fi
+
+          if grep -q "#8B5FBF" themes/batman-tas-color-theme.json; then
+            echo "✅ Batman purple found"
+          else
+            echo "❌ Batman purple missing"
+            exit 1
+          fi
+
+          if grep -q "#babed8" themes/batman-tas-color-theme.json; then
+            echo "✅ Main text color found"
+          else
+            echo "❌ Main text color missing"
+            exit 1
+          fi
+
+          echo "🦇 All Batman TAS colors validated successfully!"
+
   accessibility-check:
     name: ♿ Accessibility Check
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: 📥 Checkout repository
-      uses: actions/checkout@v5
-      
-    - name: 🔍 Check color blind friendly compliance
-      run: |
-        echo "♿ Checking color blind friendly compliance..."
-        
-        # Check that we don't use problematic red-green combinations for critical functions
-        if grep -q "list.activeSelectionForeground.*#.*red\|#.*green" themes/darkman-color-theme.json; then
-          echo "⚠️  Warning: Check list selection colors for color blind compliance"
-        fi
-        
-        # Ensure we have high contrast text (Batman Gray)
-        if grep -q "#4a5568\|#e2e8f0" themes/batman-tas-color-theme.json; then
-          echo "✅ High contrast TAS text colors maintained"
-        else
-          echo "❌ High contrast TAS text colors missing"
-          exit 1
-        fi
-        
-        echo "✅ Basic accessibility checks passed"
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v5
+
+      - name: 🔍 Check color blind friendly compliance
+        run: |
+          echo "♿ Checking color blind friendly compliance..."
+
+          # Check that we don't use problematic red-green combinations for critical functions
+          if grep -q "list.activeSelectionForeground.*#.*red\|#.*green" themes/batman-tas-color-theme.json; then
+            echo "⚠️  Warning: Check list selection colors for color blind compliance"
+          fi
+
+          # Ensure we have high contrast text
+          if grep -q "#babed8\|#E8E8E8" themes/batman-tas-color-theme.json; then
+            echo "✅ High contrast text colors maintained"
+          else
+            echo "❌ High contrast text colors missing"
+            exit 1
+          fi
+
+          echo "✅ Basic accessibility checks passed"
