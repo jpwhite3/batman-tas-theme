@@ -77,7 +77,7 @@ jobs:
         echo '```' >> preview-info.md
         
     - name: 💾 Upload preview artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: batman-tas-theme-preview-pr${{ steps.pr_info.outputs.pr_number }}
         path: |
